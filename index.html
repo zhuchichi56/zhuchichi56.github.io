@@ -7,343 +7,217 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <div class="layout">
-      <aside class="sidebar">
-        <img src="assets/profile.jpg" alt="He Zhu" class="avatar" />
-        <h2>He Zhu</h2>
-        <p>AI for Urban Intelligence</p>
-        <nav>
-          <a href="#about" class="active">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#publications">Publications</a>
-          <a href="#working-papers">Working Papers</a>
-          <a href="#experience">Experience</a>
-          <a href="#awards">Awards</a>
-        </nav>
-        <div class="sidebar-meta">
-          <span>📍 Beijing · Shanghai</span>
-          <span>✆ (+86) 189-0301-0858</span>
-        </div>
-        <div class="contacts">
-          <a href="mailto:zhuhe@stu.pku.edu.cn" aria-label="Email">✉️</a>
-          <a
-            href="https://github.com/zhuchichi56"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-          >
-            🐙
-          </a>
-          <a
-            href="https://plangpt.github.io/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="PlanGPT"
-          >
-            🌐
-          </a>
-        </div>
-      </aside>
+    <div class="sidebar">
+      <img src="assets/profile.jpg" alt="He Zhu" class="avatar" />
+      <h2>He Zhu</h2>
+      <p>M.Phil. @ Peking University</p>
+      <p>Urban Intelligence &amp; Large Language Models</p>
 
-      <main class="content">
-        <section id="about" class="hero section-card">
-          <div>
-            <p class="eyebrow">Graduate Researcher · Peking University</p>
-            <h1>Building trustworthy LLMs for urban intelligence.</h1>
-            <p class="lead">
-              I am an M.Phil. student at Peking University advised by
-              <strong>Prof. Wenjia Zhang</strong>. I lead the
-              <strong>PlanGPT</strong> series—covering text, vision-language,
-              reasoning, and benchmarking tools—to bring foundation models to
-              real urban planning workflows. My work spans large language
-              models, instruction data synthesis, urban informatics, and
-              spatial-temporal intelligence.
-            </p>
-            <div class="tag-list">
-              <span>Large Language Models</span>
-              <span>Urban Planning AI</span>
-              <span>Vision-Language</span>
-              <span>Data Synthesis</span>
-            </div>
-            <div class="cta-row">
-              <a class="btn primary" href="mailto:zhuhe@stu.pku.edu.cn">
-                Email Me
-              </a>
-              <a
-                class="btn ghost"
-                href="https://github.com/zhuchichi56"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-          <div class="highlight-panel">
-            <div class="stat-grid">
-              <div class="stat-card">
-                <p class="label">PlanGPT Series</p>
-                <p class="value">5+ deployed systems</p>
-                <p class="hint">Urban-Thinking · CoPlanner · AuditPlanner</p>
-              </div>
-              <div class="stat-card">
-                <p class="label">Publications</p>
-                <p class="value">ACL · EMNLP · SIGSPATIAL</p>
-                <p class="hint">3× ACL 2025, 1× SIGSPATIAL 2022</p>
-              </div>
-              <div class="stat-card">
-                <p class="label">Community</p>
-                <p class="value">15 followers</p>
-                <p class="hint">GitHub @zhuchichi56</p>
-              </div>
-            </div>
-            <ul class="info-list">
-              <li>
-                <span>Current</span>
-                GENAI research intern at Microsoft Research Asia (w/ Prof. Li
-                Dong), 2025.10 – present.
-              </li>
-              <li>
-                <span>Education</span>
-                M.S. Smart City &amp; Big Data (PKU), B.E. Computer Science
-                (SUSTech, top 10%).
-              </li>
-              <li>
-                <span>Contact</span>
-                zhuhe@stu.pku.edu.cn · zhuye140@gmail.com
-              </li>
-              <li>
-                <span>Opportunities</span>
-                Secured Tencent QingYun and other top lab internship offers.
-              </li>
-            </ul>
-          </div>
-        </section>
+      <nav>
+        <a href="#about" class="active">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#working-papers">Working Papers</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
+      </nav>
 
-        <section id="education" class="section-card">
-          <h2>Education</h2>
-          <ul class="timeline">
-            <li>
-              <div>
-                <strong>Peking University</strong> · M.S. Smart City &amp; Big
-                Data (Sep 2024 – Present)
-              </div>
-              <p>Advisor: Prof. Wenjia Zhang · Planning-centric LLM research.</p>
-            </li>
-            <li>
-              <div>
-                <strong>Southern University of Science and Technology</strong> ·
-                B.E. Computer Science (Sep 2020 – Jul 2024)
-              </div>
-              <p>GPA 90.2/100 (top 10%) · Advisor: Prof. Xuan Song.</p>
-            </li>
-          </ul>
-        </section>
+      <div class="sidebar-meta">
+        <span>📍 Beijing · Shanghai</span>
+        <span>☎ (+86) 189-0301-0858</span>
+        <span>✉ zhuhe@stu.pku.edu.cn</span>
+      </div>
 
-        <section id="projects" class="section-card">
-          <h2>PlanGPT Series</h2>
-          <p>
-            First comprehensive exploration of LLMs for end-to-end urban
-            planning. I serve as first author and technical lead, coordinating a
-            multi-institution team to ship research and production systems.
-          </p>
-          <div class="grid-two">
-            <div>
-              <h3>Core Models</h3>
-              <ul>
-                <li>
-                  <strong>PlanGPT</strong>: Text LLM for planning scheme
-                  generation with controllable design intents.
-                </li>
-                <li>
-                  <strong>PlanGPT-VL</strong>: First planning-specialized
-                  vision-language model with hallucination control and hybrid
-                  training for map comprehension.
-                </li>
-                <li>
-                  <strong>PlanGPT-R1</strong>: Reasoning-enhanced model for
-                  digesting dense planning documents.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3>Tools &amp; Benchmarks</h3>
-              <ul>
-                <li>
-                  <strong>UP-Bench</strong>: Benchmark for urban planning LLM
-                  tasks spanning text, vision, and reasoning challenges.
-                </li>
-                <li>
-                  <strong>PlanBench-V</strong>: Planning-map evaluation suite
-                  that surpasses larger general VLMs.
-                </li>
-                <li>
-                  <strong>Urban-Thinking · CoPlanner · AuditPlanner</strong>:
-                  Applied systems deployed with leading planning institutes.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+      <div class="contacts">
+        <a href="mailto:zhuhe@stu.pku.edu.cn" aria-label="Email">✉️</a>
+        <a
+          href="https://github.com/zhuchichi56"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+          >🐙</a
+        >
+        <a
+          href="https://plangpt.github.io/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="PlanGPT"
+          >🌐</a
+        >
+      </div>
+    </div>
 
-        <section id="publications" class="section-card">
-          <h2>Selected Publications</h2>
-          <ul class="pub-list">
-            <li>
-              <strong>
-                PlanGPT: Enhancing Urban Planning with Tailored Language Model
-              </strong>
-              · ACL Industry 2025 (Oral) ·
-              <a href="https://arxiv.org/abs/2402.19273" target="_blank">
-                Paper
-              </a>
-            </li>
-            <li>
-              <strong>
-                Augmenting High-Quality Instruction Data with Open-Sourced LLMs
-                Only
-              </strong>
-              · ACL Findings 2025 ·
-              <a
-                href="https://aclanthology.org/2025.findings-acl.906/"
-                target="_blank"
-              >
-                Paper
-              </a>
-            </li>
-            <li>
-              <strong>
-                Tag-Instruct: Controlled Instruction-Tuning Data Synthesis
-              </strong>
-              · ACL Findings 2025 ·
-              <a
-                href="https://aclanthology.org/2025.findings-acl.911/"
-                target="_blank"
-              >
-                Paper
-              </a>
-            </li>
-            <li>
-              <strong>
-                PlanGPT-VL: Vision-Language Model for Urban Planning Maps
-              </strong>
-              · EMNLP Industry 2025 ·
-              <a href="https://arxiv.org/pdf/2505.14481" target="_blank">
-                Preprint
-              </a>
-            </li>
-            <li>
-              <strong>
-                Personalized Individual Trajectory Prediction via Meta-Learning
-              </strong>
-              · ACM SIGSPATIAL 2022 ·
-              <a
-                href="https://dl.acm.org/doi/abs/10.1145/3557915.3565536"
-                target="_blank"
-              >
-                Paper
-              </a>
-            </li>
-          </ul>
-        </section>
+    <div class="content">
+      <section id="about">
+        <h1>About</h1>
+        <p>
+          I am He Zhu (Zhuchichi), an M.Phil. student in Smart City &amp; Big
+          Data at <strong>Peking University</strong>, advised by Prof. Wenjia
+          Zhang. I study large language models for urban intelligence, spanning
+          instruction data synthesis, planning-focused LLMs, and spatial
+          reasoning. I currently intern at
+          <strong>Microsoft Research Asia (GENAI, Prof. Li Dong)</strong> and
+          lead the <strong>PlanGPT</strong> series that enables planning
+          institutes to co-design cities with AI.
+        </p>
+        <p>
+          Previously, I completed my B.E. in Computer Science at
+          <strong>Southern University of Science and Technology</strong>
+          (SUSTech) with a 90.2/100 GPA (top 10%) under Prof. Xuan Song. I have
+          collaborated with SenseTime, Shanghai AI Lab, LocationMind Tokyo, the
+          SUSTech-NLP group, UTokyo CSIS, and NUS. I also secured offers from
+          Tencent QingYun and multiple top AI labs.
+        </p>
+        <ul class="inline-list">
+          <li>Research areas: LLMs · Urban Planning AI · Vision-Language · Data Synthesis</li>
+          <li>Community: 15 followers &amp; 22 following on GitHub (@zhuchichi56)</li>
+          <li>Emails: zhuhe@stu.pku.edu.cn · zhuye140@gmail.com</li>
+        </ul>
+      </section>
 
-        <section id="working-papers" class="section-card">
-          <h2>Working Papers &amp; Ongoing</h2>
-          <ul>
-            <li>
-              <strong>Anchored Supervised Fine-Tuning</strong>: Principled
-              post-training framework for LLM alignment. (ICLR 2026 submission)
-            </li>
-            <li>
-              <strong>AlignDiff</strong>: Exploits model-intrinsic signals for
-              better instruction data selection. (ICLR 2026 submission)
-            </li>
-            <li>
-              <strong>Fair Router Evaluation for Collaborative LLMs</strong>:
-              Establishes rigorous metrics for router reliability. (ICLR 2026
-              submission)
-            </li>
-            <li>
-              <strong>Loss Landscape Alignment Metrics</strong>: Measures
-              distribution alignment via geometric cues for CVPR 2026.
-            </li>
-          </ul>
-        </section>
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <strong>Peking University</strong> — M.S. Smart City &amp; Big Data
+            (Sep 2024 – Present). Advisor: Prof. Wenjia Zhang.
+          </li>
+          <li>
+            <strong>Southern University of Science and Technology</strong> —
+            B.E. Computer Science (Sep 2020 – Jul 2024). GPA 90.2/100 (top 10%).
+            Advisor: Prof. Xuan Song.
+          </li>
+        </ul>
+      </section>
 
-        <section id="experience" class="section-card">
-          <h2>Professional Experience</h2>
-          <ul class="timeline">
-            <li>
-              <div>
-                <strong>Microsoft Research Asia · GENAI</strong> — Research
-                Intern (Oct 2025 – Present)
-              </div>
-              <p>Work with Prof. Li Dong on multimodal and instruction-tuned LLMs.</p>
-            </li>
-            <li>
-              <div>
-                <strong>Shanghai AI Laboratory</strong> — Researcher, Foundation
-                LMs (May 2025 – Oct 2025)
-              </div>
-              <p>Built city-scale agents and planning copilots with frontier LLMs.</p>
-            </li>
-            <li>
-              <div>
-                <strong>SenseTime</strong> — Researcher, Foundation LMs (Jun 2024
-                – Sep 2024)
-              </div>
-              <p>Designed instruction data pipelines and hallucination mitigation.</p>
-            </li>
-            <li>
-              <div>
-                <strong>LocationMind, Tokyo</strong> — Project Assistant,
-                Autonomous Driving Algorithms (Jun 2023 – Dec 2023)
-              </div>
-              <p>Developed meta-learning based trajectory prediction models.</p>
-            </li>
-          </ul>
-        </section>
+      <section id="projects">
+        <h2>PlanGPT Series</h2>
+        <p>
+          I am the first author and technical lead of PlanGPT, the first
+          systematic study of LLMs for urban planning. The suite includes:
+        </p>
+        <ul>
+          <li>
+            <strong>PlanGPT</strong> — Text LLM for planning scheme generation,
+            powering Urban-Thinking, CoPlanner, and AuditPlanner.
+          </li>
+          <li>
+            <strong>PlanGPT-VL</strong> — Vision-language model for planning
+            maps with hallucination control and hybrid training. Outperforms
+            larger general VLMs on PlanBench-V.
+          </li>
+          <li>
+            <strong>PlanGPT-R1</strong> — Reasoning-enhanced model for long-form
+            planning documents.
+          </li>
+          <li>
+            <strong>UP-Bench &amp; PlanBench-V</strong> — Benchmarks covering
+            text, vision, and multimodal planning tasks.
+          </li>
+        </ul>
+      </section>
 
-        <section id="research" class="section-card">
-          <h2>Research Experience</h2>
-          <ul class="timeline">
-            <li>
-              <div>
-                <strong>SUSTech-NLP Group</strong> — Research Assistant (Nov
-                2023 – Present)
-              </div>
-              <p>Instruction data synthesis and distillation with Prof. Guanhua Chen.</p>
-            </li>
-            <li>
-              <div>
-                <strong>Center for Spatial Information Science, UTokyo</strong>
-                — Research Assistant (Feb 2022 – May 2022; Jul 2023 – Sep 2023)
-              </div>
-              <p>Trajectory reasoning and group-interaction modeling for traffic agents.</p>
-            </li>
-            <li>
-              <div>
-                <strong>School of Computing, NUS</strong> — Visiting Student
-                (May 2022 – Jul 2022)
-              </div>
-              <p>Human behavior prediction and IoT-driven trajectory tracking.</p>
-            </li>
-          </ul>
-        </section>
+      <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul class="publication-list">
+          <li>
+            <strong>PlanGPT: Enhancing Urban Planning with Tailored Language Model</strong>
+            — ACL Industry 2025 (Oral). <a href="https://arxiv.org/abs/2402.19273">Paper</a>
+          </li>
+          <li>
+            <strong>Augmenting High-Quality Instruction Data with Open-Sourced LLMs Only</strong>
+            — ACL Findings 2025. <a href="https://aclanthology.org/2025.findings-acl.906/">Paper</a>
+          </li>
+          <li>
+            <strong>Tag-Instruct: Controlled Instruction-Tuning Data Synthesis</strong>
+            — ACL Findings 2025. <a href="https://aclanthology.org/2025.findings-acl.911/">Paper</a>
+          </li>
+          <li>
+            <strong>PlanGPT-VL: Vision-Language Model for Urban Planning Maps</strong>
+            — EMNLP Industry 2025. <a href="https://arxiv.org/pdf/2505.14481">Preprint</a>
+          </li>
+          <li>
+            <strong>Personalized Individual Trajectory Prediction via Meta-Learning</strong>
+            — ACM SIGSPATIAL 2022. <a href="https://dl.acm.org/doi/abs/10.1145/3557915.3565536">Paper</a>
+          </li>
+        </ul>
+      </section>
 
-        <section id="awards" class="section-card">
-          <h2>Awards &amp; Honors</h2>
-          <ul class="badge-list">
-            <li>
-              Outstanding Graduate, Department of Computer Science, SUSTech (Top
-              5%, 2024)
-            </li>
-            <li>Outstanding Graduate, SUSTech (Top 5%, 2024)</li>
-            <li>Outstanding Thesis, SUSTech (Top 10%, 2024)</li>
-            <li>Annual Outstanding Student, SUSTech (2021, 2022, 2023)</li>
-          </ul>
-        </section>
-      </main>
+      <section id="working-papers">
+        <h2>Working Papers &amp; Submissions</h2>
+        <ul>
+          <li>
+            <strong>Anchored Supervised Fine-Tuning</strong> — Principled
+            framework for post-training LLMs (ICLR 2026 submission).
+          </li>
+          <li>
+            <strong>AlignDiff</strong> — Uses model-intrinsic information for
+            better instruction data selection (ICLR 2026 submission).
+          </li>
+          <li>
+            <strong>Fair &amp; Comprehensive Router Evaluation</strong> —
+            Metrics for collaborative LLM routers (ICLR 2026 submission).
+          </li>
+          <li>
+            <strong>Loss Landscape Alignment Metrics</strong> — Geometry-based
+            measurement of distribution alignment (CVPR 2026 target).
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Professional Experience</h2>
+        <ul>
+          <li>
+            <strong>Microsoft Research Asia · GENAI</strong> — Research Intern
+            (Oct 2025 – Present). Work with Prof. Li Dong on instruction-tuned
+            and multi-modal LLMs.
+          </li>
+          <li>
+            <strong>Shanghai AI Laboratory</strong> — Researcher, Foundation
+            Language Models (May 2025 – Oct 2025). Built city-scale agents and
+            planning copilots.
+          </li>
+          <li>
+            <strong>SenseTime</strong> — Researcher, Foundation Models (Jun 2024
+            – Sep 2024). Focused on scalable instruction data and hallucination
+            reduction.
+          </li>
+          <li>
+            <strong>LocationMind, Tokyo</strong> — Project Assistant,
+            Autonomous Driving Algorithms (Jun 2023 – Dec 2023). Developed
+            meta-learning trajectory prediction pipelines.
+          </li>
+        </ul>
+
+        <h3>Research Appointments</h3>
+        <ul>
+          <li>
+            <strong>SUSTech-NLP Group</strong> — Research Assistant (Nov 2023 –
+            Present). Instruction data synthesis with Prof. Guanhua Chen.
+          </li>
+          <li>
+            <strong>Center for Spatial Information Science, UTokyo</strong> —
+            Research Assistant (Feb 2022 – May 2022; Jul 2023 – Sep 2023). Work
+            on trajectory reasoning and group interaction modeling.
+          </li>
+          <li>
+            <strong>School of Computing, NUS</strong> — Visiting Student (May
+            2022 – Jul 2022). Human behavior prediction and IoT-driven tracking.
+          </li>
+        </ul>
+      </section>
+
+      <section id="awards">
+        <h2>Awards &amp; Honors</h2>
+        <ul class="inline-list">
+          <li>Outstanding Graduate, Dept. of CS, SUSTech (Top 5%, 2024)</li>
+          <li>Outstanding Graduate, SUSTech (Top 5%, 2024)</li>
+          <li>Outstanding Thesis, SUSTech (Top 10%, 2024)</li>
+          <li>Annual Outstanding Student, SUSTech (2021, 2022, 2023)</li>
+        </ul>
+      </section>
     </div>
   </body>
 </html>
