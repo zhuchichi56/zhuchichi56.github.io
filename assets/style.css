@@ -75,6 +75,18 @@ body {
   margin-top: auto;
 }
 
+.profiles {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.profiles img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
 .content {
   flex: 1;
   padding: 40px 60px;
@@ -134,8 +146,8 @@ ul {
 }
 
 .item-with-logo img {
-  height: 40px;
-  width: auto;
+  width: 52px;
+  height: auto;
   object-fit: contain;
 }
 
@@ -166,5 +178,9 @@ a:hover {
   .item-with-logo {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .profiles {
+    justify-content: center;
   }
 }
