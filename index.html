@@ -15,11 +15,13 @@
 
       <nav>
         <a href="#about" class="active">About</a>
+        <a href="#news">News</a>
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
         <a href="#working-papers">Working Papers</a>
         <a href="#experience">Experience</a>
+        <a href="#research-appointments">Research Appointments</a>
         <a href="#awards">Awards</a>
       </nav>
 
@@ -29,40 +31,53 @@
         <span>✉ zhuhe@stu.pku.edu.cn</span>
       </div>
 
-      <div class="contacts">
-        <a href="mailto:zhuhe@stu.pku.edu.cn" aria-label="Email">✉️</a>
-        <a
-          href="https://plangpt.github.io/"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="PlanGPT"
-          >🌐</a
-        >
-      </div>
-
-      <div class="profiles">
-        <a
-          href="https://github.com/zhuchichi56"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="GitHub"
-        >
-          <img src="assets/logos/github.svg" alt="GitHub logo" />
-        </a>
-        <a
-          href="https://scholar.google.com/citations?user=Zhuchichi"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Google Scholar"
-        >
-          <img src="assets/logos/google-scholar.svg" alt="Google Scholar logo" />
+      <div class="sidebar-footer">
+        <div class="contact-icons">
+          <a
+            href="mailto:zhuhe@stu.pku.edu.cn"
+            aria-label="Email"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="assets/logos/email.svg" alt="Email" />
+          </a>
+          <a
+            href="https://github.com/zhuchichi56"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            <img src="assets/logos/github.svg" alt="GitHub logo" />
+          </a>
+          <a
+            href="https://scholar.google.com/citations?user=Zhuchichi"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Google Scholar"
+          >
+            <img
+              src="assets/logos/google-scholar.svg"
+              alt="Google Scholar logo"
+            />
+          </a>
+          <a
+            href="https://plangpt.github.io/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="PlanGPT"
+          >
+            <img src="assets/logos/globe.svg" alt="Website" />
+          </a>
+        </div>
+        <a class="resume-btn" href="HEZHU.pdf" download>
+          Download CV
         </a>
       </div>
     </div>
 
     <div class="content">
       <section id="about">
-        <h1>About</h1>
+        <h2>About</h2>
         <p>
           I am He Zhu (Zhuchichi), an M.Phil. student in Smart City &amp; Big
           Data at <strong>Peking University</strong>, advised by Prof. Wenjia
@@ -87,6 +102,24 @@
         </ul>
       </section>
 
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">May 2025</span>
+            <p>One EMNLP Industry 2025 paper (PlanGPT-VL) accepted.</p>
+          </li>
+          <li>
+            <span class="news-date">Jan 2025</span>
+            <p>Two ACL Findings papers (FANNO &amp; Tag-Instruct) accepted.</p>
+          </li>
+          <li>
+            <span class="news-date">Nov 2024</span>
+            <p>One ACL Industry 2025 oral paper (PlanGPT) accepted.</p>
+          </li>
+        </ul>
+      </section>
+
       <section id="education">
         <h2>Education</h2>
         <ul class="logo-list">
@@ -106,7 +139,7 @@
       </section>
 
       <section id="projects">
-        <h2>PlanGPT Series</h2>
+        <h2>Projects</h2>
         <p>
           I am the first author and technical lead of PlanGPT, the first
           systematic study of LLMs for urban planning. The suite includes:
@@ -136,55 +169,111 @@
       </section>
 
       <section id="publications">
-        <h2>Selected Publications</h2>
+        <h2>Publications</h2>
         <ul class="publication-list">
           <li>
-            <strong>PlanGPT: Enhancing Urban Planning with Tailored Language Model</strong>
-            — ACL Industry 2025 (Oral). <a href="https://arxiv.org/abs/2402.19273">Paper</a>
+            <div class="paper-header">
+              <strong>PlanGPT: Enhancing Urban Planning with Tailored Language Model</strong>
+              <span class="paper-venue oral">ACL Industry 2025 · Oral</span>
+            </div>
+            <div class="paper-authors">HE ZHU, WENJIA ZHANG, GUANHUA CHEN</div>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2402.19273">Paper</a>
+            </div>
           </li>
           <li>
-            <strong>Augmenting High-Quality Instruction Data with Open-Sourced LLMs Only</strong>
-            — ACL Findings 2025. <a href="https://aclanthology.org/2025.findings-acl.906/">Paper</a>
+            <div class="paper-header">
+              <strong>Augmenting High-Quality Instruction Data with Open-Sourced LLMs Only</strong>
+              <span class="paper-venue">ACL Findings 2025</span>
+            </div>
+            <div class="paper-authors">
+              HE ZHU, YIFAN DING, YICHENG TAO, ZHIWEN RUAN, YIXIA LI, WENJIA ZHANG, YUN CHEN, GUANHUA CHEN
+            </div>
+            <div class="paper-links">
+              <a href="https://aclanthology.org/2025.findings-acl.906/">Paper</a>
+            </div>
           </li>
           <li>
-            <strong>Tag-Instruct: Controlled Instruction-Tuning Data Synthesis</strong>
-            — ACL Findings 2025. <a href="https://aclanthology.org/2025.findings-acl.911/">Paper</a>
+            <div class="paper-header">
+              <strong>Tag-Instruct: A Scalable Framework for Controlled Instruction-Tuning Data Synthesis</strong>
+              <span class="paper-venue">ACL Findings 2025</span>
+            </div>
+            <div class="paper-authors">
+              HE ZHU, ZHIWEN RUAN, JUNYOU SU, XINGWEI HE, YUN CHEN, WENJIA ZHANG, GUANHUA CHEN
+            </div>
+            <div class="paper-links">
+              <a href="https://aclanthology.org/2025.findings-acl.911/">Paper</a>
+            </div>
           </li>
           <li>
-            <strong>PlanGPT-VL: Vision-Language Model for Urban Planning Maps</strong>
-            — EMNLP Industry 2025. <a href="https://arxiv.org/pdf/2505.14481">Preprint</a>
+            <div class="paper-header">
+              <strong>PlanGPT-VL: Vision-Language Model for Urban Planning Maps</strong>
+              <span class="paper-venue">EMNLP Industry 2025</span>
+            </div>
+            <div class="paper-authors">
+              HE ZHU*, JUNYOU SU*, MINXIN CHEN*, YUN CHEN, GUANHUA CHEN, WENJIA ZHANG
+            </div>
+            <div class="paper-links">
+              <a href="https://arxiv.org/pdf/2505.14481">Preprint</a>
+            </div>
           </li>
           <li>
-            <strong>Personalized Individual Trajectory Prediction via Meta-Learning</strong>
-            — ACM SIGSPATIAL 2022. <a href="https://dl.acm.org/doi/abs/10.1145/3557915.3565536">Paper</a>
+            <div class="paper-header">
+              <strong>Personalized Individual Trajectory Prediction via Meta-Learning</strong>
+              <span class="paper-venue">ACM SIGSPATIAL 2022</span>
+            </div>
+            <div class="paper-authors">HE ZHU, LIYU ZHANG, ZIPEI FAN</div>
+            <div class="paper-links">
+              <a href="https://dl.acm.org/doi/abs/10.1145/3557915.3565536">Paper</a>
+            </div>
           </li>
         </ul>
       </section>
 
       <section id="working-papers">
-        <h2>Working Papers &amp; Submissions</h2>
-        <ul>
+        <h2>Working Papers</h2>
+        <ul class="publication-list">
           <li>
-            <strong>Anchored Supervised Fine-Tuning</strong> — Principled
-            framework for post-training LLMs (ICLR 2026 submission).
+            <div class="paper-header">
+              <strong>Anchored Supervised Fine-Tuning: A Principled Framework for Post-Training LLMs</strong>
+              <span class="paper-venue">ICLR 2026 Submission</span>
+            </div>
+            <div class="paper-authors">
+              HE ZHU*, JUNYOU SU*, PENG LAI*, WENJIA ZHANG, LINYI YANG, GUANHUA CHEN
+            </div>
           </li>
           <li>
-            <strong>AlignDiff</strong> — Uses model-intrinsic information for
-            better instruction data selection (ICLR 2026 submission).
+            <div class="paper-header">
+              <strong>AlignDiff: Exploiting Model-Intrinsic Information for Better Data Selection</strong>
+              <span class="paper-venue">ICLR 2026 Submission</span>
+            </div>
+            <div class="paper-authors">
+              PENG LAI*, HE ZHU*, ZHIWEN RUAN, DONGDONG ZHANG, YUN CHEN, PENG LI, FURU WEI, YANG LIU, GUANHUA CHEN
+            </div>
           </li>
           <li>
-            <strong>Fair &amp; Comprehensive Router Evaluation</strong> —
-            Metrics for collaborative LLM routers (ICLR 2026 submission).
+            <div class="paper-header">
+              <strong>Towards Fair and Comprehensive Evaluation of Routers in Collaborative LLM Systems</strong>
+              <span class="paper-venue">ICLR 2026 Submission</span>
+            </div>
+            <div class="paper-authors">
+              WANXING WU*, HE ZHU*, YIXIA LI*, YUN CHEN, GUANHUA CHEN
+            </div>
           </li>
           <li>
-            <strong>Loss Landscape Alignment Metrics</strong> — Geometry-based
-            measurement of distribution alignment (CVPR 2026 target).
+            <div class="paper-header">
+              <strong>Measuring Distribution Alignment through Loss Landscape Geometry</strong>
+              <span class="paper-venue">CVPR 2026 Target</span>
+            </div>
+            <div class="paper-authors">
+              HE ZHU, REN MA, JUNYOU SU, XINGWEI HE, YUN CHEN, WENJIA ZHANG, GUANHUA CHEN
+            </div>
           </li>
         </ul>
       </section>
 
       <section id="experience">
-        <h2>Professional Experience</h2>
+        <h2>Experience</h2>
         <ul class="logo-list">
           <li class="item-with-logo">
             <img src="assets/logos/microsoft.png" alt="Microsoft logo" />
@@ -212,7 +301,10 @@
           </li>
         </ul>
 
-        <h3>Research Appointments</h3>
+      </section>
+
+      <section id="research-appointments">
+        <h2>Research Appointments</h2>
         <ul class="logo-list">
           <li class="item-with-logo">
             <img src="assets/logos/sustech.png" alt="SUSTech logo" />
@@ -236,7 +328,7 @@
       </section>
 
       <section id="awards">
-        <h2>Awards &amp; Honors</h2>
+        <h2>Awards</h2>
         <ul class="inline-list">
           <li>Outstanding Graduate, Dept. of CS, SUSTech (Top 5%, 2024)</li>
           <li>Outstanding Graduate, SUSTech (Top 5%, 2024)</li>

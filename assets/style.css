@@ -68,23 +68,58 @@ body {
   gap: 6px;
 }
 
-.contacts {
-  display: flex;
-  gap: 16px;
-  font-size: 20px;
+.sidebar-footer {
   margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
-.profiles {
-  margin-top: 16px;
+.contact-icons {
   display: flex;
   gap: 12px;
 }
 
-.profiles img {
-  width: 32px;
-  height: 32px;
-  display: block;
+.contact-icons a {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-icons a:hover {
+  border-color: #f06292;
+  transform: translateY(-2px);
+}
+
+.contact-icons img {
+  width: 22px;
+  height: 22px;
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background-color: #f06292;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  width: 100%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.resume-btn:hover {
+  background-color: #ff7da7;
+  transform: translateY(-1px);
 }
 
 .content {
@@ -118,6 +153,37 @@ ul {
   margin-bottom: 6px;
 }
 
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.news-list li {
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.news-list p {
+  margin: 0;
+  color: #333333;
+}
+
+.news-date {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7f7f7f;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .publication-list {
   list-style: none;
   padding-left: 0;
@@ -125,6 +191,37 @@ ul {
 
 .publication-list li {
   margin-bottom: 12px;
+}
+
+.paper-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.paper-venue {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.paper-venue.oral {
+  color: #556b2f;
+}
+
+.paper-authors {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.paper-links {
+  margin-top: 6px;
+  display: inline-flex;
+  gap: 12px;
+  font-size: 14px;
 }
 
 .logo-list {
@@ -180,7 +277,7 @@ a:hover {
     align-items: flex-start;
   }
 
-  .profiles {
+  .contact-icons {
     justify-content: center;
   }
 }
