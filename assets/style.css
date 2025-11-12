@@ -207,12 +207,6 @@ ul {
   border-bottom: none;
 }
 
-.paper-header {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
 .paper-venue {
   font-size: 12px;
   font-weight: 600;
@@ -240,11 +234,28 @@ ul {
   line-height: 1.4;
 }
 
-.paper-links {
-  margin-top: 6px;
+.paper-line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.paper-line.secondary {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #4a4a4a;
+}
+
+.paper-line strong {
+  font-size: 15px;
+  color: #1f1f1f;
+}
+
+.paper-links.inline {
   display: inline-flex;
   gap: 12px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .logo-list {
