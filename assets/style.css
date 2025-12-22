@@ -309,6 +309,38 @@ a:hover {
   text-decoration: underline;
 }
 
+.visitor-widget {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 230px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #2f2f2f;
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  font-size: 12px;
+  z-index: 1000;
+}
+
+.visitor-title {
+  font-weight: 600;
+  color: #f5b4cb;
+  margin-bottom: 6px;
+}
+
+.visitor-count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.visitor-count:first-of-type {
+  border-top: none;
+}
+
 @media (max-width: 960px) {
   body {
     flex-direction: column;
@@ -339,5 +371,11 @@ a:hover {
 
   .contact-icons {
     justify-content: center;
+  }
+
+  .visitor-widget {
+    right: 12px;
+    bottom: 12px;
+    width: 200px;
   }
 }
