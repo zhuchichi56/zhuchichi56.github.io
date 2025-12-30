@@ -242,6 +242,12 @@ ul {
   line-height: 1.4;
 }
 
+.corresponding {
+  font-size: 0.75em;
+  vertical-align: super;
+  margin-left: 2px;
+}
+
 .paper-line {
   display: grid;
   grid-template-columns: 1fr auto;
