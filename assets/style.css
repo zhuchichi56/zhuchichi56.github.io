@@ -167,7 +167,7 @@ ul {
 }
 
 .news-scroll {
-  max-height: 220px;
+  max-height: 150px;
   overflow-y: auto;
   padding-right: 8px;
   border: 1px solid #e8e8e8;
