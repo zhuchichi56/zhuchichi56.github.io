@@ -307,18 +307,17 @@ ul {
 .paper-venue {
   font-size: 12px;
   font-weight: 600;
-  color: #c05621;
-  text-transform: uppercase;
+  color: #2b2b2b;
   letter-spacing: 0.05em;
   text-align: right;
 }
 
 .paper-venue.oral {
-  color: #556b2f;
+  color: #e53e3e;
 }
 
 .paper-venue.upcoming {
-  color: #2563eb;
+  color: #2b2b2b;
 }
 
 .paper-authors {
