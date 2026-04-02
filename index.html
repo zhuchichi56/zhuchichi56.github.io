@@ -413,5 +413,19 @@
       async
       src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
     ></script>
+    <script>
+      (function () {
+        var offset = 400;
+        var el = document.getElementById('busuanzi_value_page_pv');
+        if (!el) return;
+        var observer = new MutationObserver(function () {
+          var val = parseInt(el.innerText, 10);
+          if (!isNaN(val)) {
+            el.innerText = Math.max(val - offset, 0);
+          }
+        });
+        observer.observe(el, { childList: true, characterData: true, subtree: true });
+      })();
+    </script>
   </body>
 </html>
