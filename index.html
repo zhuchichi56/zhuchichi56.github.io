@@ -397,35 +397,5 @@
         </ul>
       </section>
     </div>
-
-    <aside class="visitor-widget" aria-label="Visitor statistics">
-      <div class="visitor-title">访客统计</div>
-      <div class="visitor-count" id="busuanzi_container_page_pv">
-        <span>本页访问</span>
-        <span id="busuanzi_value_page_pv">--</span>
-      </div>
-      <div class="visitor-count" id="busuanzi_container_site_uv">
-        <span>独立访客</span>
-        <span id="busuanzi_value_site_uv">--</span>
-      </div>
-    </aside>
-    <script
-      async
-      src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
-    ></script>
-    <script>
-      (function () {
-        var offset = 400;
-        var el = document.getElementById('busuanzi_value_page_pv');
-        if (!el) return;
-        var observer = new MutationObserver(function () {
-          var val = parseInt(el.innerText, 10);
-          if (!isNaN(val)) {
-            el.innerText = Math.max(val - offset, 0);
-          }
-        });
-        observer.observe(el, { childList: true, characterData: true, subtree: true });
-      })();
-    </script>
   </body>
 </html>
