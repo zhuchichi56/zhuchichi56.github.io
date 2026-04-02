@@ -313,6 +313,10 @@ ul {
 }
 
 .paper-venue.oral {
+  color: #2b2b2b;
+}
+
+.oral-tag {
   color: #e53e3e;
 }
 
