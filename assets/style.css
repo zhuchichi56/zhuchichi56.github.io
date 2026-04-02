@@ -69,6 +69,14 @@ body {
   gap: 6px;
 }
 
+.sidebar-inline-logo {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 2px;
+  filter: brightness(0) invert(0.8);
+}
+
 .sidebar-footer {
   margin-top: auto;
   width: 100%;
