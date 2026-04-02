@@ -166,6 +166,33 @@ ul {
   gap: 10px;
 }
 
+.news-scroll {
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 8px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 14px 16px;
+  background: #fafafa;
+}
+
+.news-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.news-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.news-scroll::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 4px;
+}
+
+.news-scroll::-webkit-scrollbar-thumb:hover {
+  background: #b0b0b0;
+}
+
 .news-timeline {
   list-style: none;
   padding-left: 0;
