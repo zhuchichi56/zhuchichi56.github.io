@@ -22,6 +22,7 @@
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#papers">First Author Paper</a>
+        <a href="#coauthor-papers">Select Co-authored Paper</a>
         <a href="#experience">Experience</a>
         <a href="#research-appointments">Research Appointments</a>
         <a href="#honors">Honors &amp; Service</a>
@@ -85,12 +86,12 @@
           <strong>Microsoft Research Asia (GENAI Group)</strong>.
         </p>
         <p>
-          My research interests broadly lie in the areas of Machine Learning (ML), Natural Language Processing (NLP), and Large Language Models (LLM). More specifically, I focus on data-centric LLM research and domain-specific deployment, including:
+          My research interests broadly lie in the areas of Machine Learning (ML), Natural Language Processing (NLP), and Large Language Models (LLM). More specifically, I focus on data-centric LLM research and domain-specific deployment. I am also currently exploring <strong>On-Policy Distillation (OPD)</strong> and <strong>Agent Harness</strong>. My research includes:
         </p>
         <ul class="inline-list">
-          <li><span class="label">(i) High-Quality Data Selection:</span> <a href="#paper-aligndiff">AlignDiff</a>, <a href="#paper-instructdiff">InstructDiff</a></li>
+          <li><span class="label">(i) High-Quality Data Selection:</span> <a href="#paper-aligndiff">AlignDiff</a>, <a href="#paper-instructdiff">InstructDiff</a>, <a href="#paper-dripper">Dripper</a>, <a href="#paper-topic-over-source">Topic Over Source</a></li>
           <li><span class="label">(ii) Scalable Data Synthesis:</span> <a href="#paper-fanno">FANNO</a>, <a href="#paper-tag-instruct">Tag-Instruct</a></li>
-          <li><span class="label">(iii) Fine-Tuning Mechanisms:</span> <a href="#paper-asft">ASFT</a></li>
+          <li><span class="label">(iii) Fine-Tuning Mechanisms:</span> <a href="#paper-asft">ASFT</a>, <a href="#paper-cft">CFT</a></li>
           <li><span class="label">(iv) Domain-Specific Foundation Models (Urban Intelligence):</span> <a href="#paper-plangpt">PlanGPT</a>, <a href="#paper-plangpt-vl">PlanGPT-VL</a></li>
         </ul>
         
@@ -201,7 +202,7 @@
               <span class="paper-venue">ICLR 2026</span>
             </div>
             <div class="paper-line secondary">
-              <span class="paper-authors small"><strong>HE ZHU*</strong>, Junyou Su*, Peng Lai*, Wenjia Zhang, Linyi Yang, Guanhua Chen<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
+              <span class="paper-authors small"><strong>HE ZHU</strong>, Junyou Su, Peng Lai, Wenjia Zhang, Linyi Yang, Guanhua Chen<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
               <span class="paper-links inline">
                 <a href="https://github.com/zhuchichi56/ASFT">Code</a>
               </span>
@@ -249,14 +250,13 @@
               <span class="paper-venue">EMNLP Industry 2025</span>
             </div>
             <div class="paper-line secondary">
-              <span class="paper-authors small"><strong>HE ZHU*</strong>, Junyou Su*, Minxin Chen*, Yun Chen, Guanhua Chen, Wenjia Zhang<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
+              <span class="paper-authors small"><strong>HE ZHU</strong>, Junyou Su, Minxin Chen, Yun Chen, Guanhua Chen, Wenjia Zhang<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
               <span class="paper-links inline">
                 <a href="https://arxiv.org/pdf/2505.14481">Paper</a>
               </span>
             </div>
           </li>
-          <!--
-          <li>
+          <li id="paper-sigspatial">
             <div class="paper-line">
               <strong>Personalized Individual Trajectory Prediction via Meta-Learning</strong>
               <span class="paper-venue oral">ACM SIGSPATIAL 2022 · Oral</span>
@@ -268,7 +268,6 @@
               </span>
             </div>
           </li>
-          -->
           <li>
             <div class="paper-line">
               <strong>Towards Fair and Comprehensive Evaluation of Routers in Collaborative LLM Systems</strong>
@@ -300,6 +299,39 @@
             </div>
             <div class="paper-line secondary">
               <span class="paper-authors small">Peng Lai*, <strong>HE ZHU*</strong>, Zhiwen Ruan, Dongdong Zhang, Yun Chen, Peng Li, Furu Wei, Yang Liu, Guanhua Chen<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="coauthor-papers">
+        <h2>Select Co-authored Paper</h2>
+        <ul class="paper-list compact">
+          <li id="paper-cft">
+            <div class="paper-line">
+              <strong>Enhancing Large Language Model Reasoning via Selective Critical Token Fine-Tuning</strong>
+            </div>
+            <div class="paper-line secondary">
+              <span class="paper-authors small">Zhiwen Ruan, Yixia Li, <strong>He Zhu</strong>, Yun Chen, Peng Li, Yang Liu, Guanhua Chen</span>
+            </div>
+          </li>
+          <li id="paper-dripper">
+            <div class="paper-line">
+              <strong>Dripper: Token-Efficient Main HTML Extraction with a Lightweight LM</strong>
+            </div>
+            <div class="paper-line secondary">
+              <span class="paper-authors small">Mengjie Liu, Jiahui Peng, Wenchang Ning, Pei Chu, Jiantao Qiu, Ren Ma, <strong>He Zhu</strong>, Rui Min, Lindong Lu, Linfeng Hou, Kaiwen Liu, Yuan Qu, Zhenxiang Li, Chao Xu, Zhongying Tu, Wentao Zhang, Conghui He</span>
+            </div>
+          </li>
+          <li id="paper-topic-over-source">
+            <div class="paper-line">
+              <strong>Topic Over Source: The Key to Effective Data Mixing for Language Models Pre-training</strong>
+            </div>
+            <div class="paper-line secondary">
+              <span class="paper-authors small">Jiahui Peng, Xiangchao Zhuang, Jiantao Qiu, Ren Ma, Jianye Yu, <strong>He Zhu</strong>, Conghui He</span>
+              <span class="paper-links inline">
+                <a href="https://arxiv.org/abs/2502.16802">Paper</a>
+              </span>
             </div>
           </li>
         </ul>
