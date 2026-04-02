@@ -369,6 +369,13 @@ ul {
   font-size: 13px;
 }
 
+.paper-link-icon {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
 .logo-list {
   list-style: none;
   padding-left: 0;
