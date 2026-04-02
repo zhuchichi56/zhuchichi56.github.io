@@ -307,6 +307,7 @@ ul {
 .paper-venue {
   font-size: 12px;
   font-weight: 600;
+  font-style: italic;
   color: #2b2b2b;
   letter-spacing: 0.05em;
   text-align: right;
