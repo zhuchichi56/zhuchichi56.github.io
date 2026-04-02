@@ -207,6 +207,18 @@ ul {
   color: #2b2b2b;
 }
 
+.news-inline-logo {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.highlight-red {
+  color: #e53e3e;
+  font-weight: 600;
+}
+
 .news-timeline {
   list-style: none;
   padding-left: 0;
