@@ -60,21 +60,35 @@ body {
   color: #f06292;
 }
 
-.sidebar-meta {
-  font-size: 13px;
+.sidebar-contact {
+  font-size: 12px;
   color: #bfbfbf;
-  text-align: center;
   display: flex;
   flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding: 0 4px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
   gap: 6px;
 }
 
-.sidebar-inline-logo {
-  height: 1em;
-  width: auto;
-  vertical-align: middle;
-  margin-right: 2px;
-  filter: brightness(0) invert(0.8);
+.contact-icon {
+  font-size: 11px;
+  width: 14px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.contact-logo {
+  height: 12px;
+  width: 14px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(0) invert(0.75);
 }
 
 .sidebar-footer {
