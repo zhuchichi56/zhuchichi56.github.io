@@ -330,6 +330,14 @@ ul {
   object-fit: contain;
 }
 
+.honors-list .item-with-logo img {
+  width: 28px;
+}
+
+.honors-list {
+  gap: 10px;
+}
+
 .service-highlights {
   margin-top: 12px;
   display: flex;
