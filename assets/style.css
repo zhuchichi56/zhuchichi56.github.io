@@ -73,7 +73,12 @@ body {
 .contact-row {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
+}
+
+.contact-row.center {
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contact-icon {
