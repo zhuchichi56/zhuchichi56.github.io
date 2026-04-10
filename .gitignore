@@ -1,2 +1,13 @@
 _site/
 
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+*.bbl
+*.blg
+
