@@ -26,6 +26,7 @@
 \usepackage{fancyhdr}
 \usepackage{tikz}
 \usepackage{etoolbox}
+\usepackage{graphicx}
 % ── Colors ───────────────────────────────────────────────────
 \definecolor{headcol}{RGB}{30, 30, 30}
 \definecolor{rulecol}{RGB}{180, 50, 30}
@@ -83,6 +84,10 @@
 }
 
 % ── Helpers ──────────────────────────────────────────────────
+% Inline university logo (height matches font size)
+\newcommand{\unilogo}[1]{%
+  \raisebox{-0.5pt}{\includegraphics[height=8pt]{assets/logos/cv/#1}}%
+}
 \newcommand{\me}[1]{\textbf{#1}}
 \newcommand{\eqstar}{$^{*}$}
 \newcommand{\corr}{$^{\dagger}$}
@@ -185,7 +190,7 @@ for urban intelligence
 % ── EDUCATION ────────────────────────────────────────────────
 \section{Education}
 
-\entry{Peking University}{Beijing, China}
+\entry{\unilogo{pku.png}\enskip Peking University}{Beijing, China}
 \textit{M.Sc.\ in Smart City \& Data Sciences} \hfill \textit{2024 -- Present}
 \begin{itemize}
   \item \textbf{Advisors}: Prof.~Wenjia Zhang, Prof.~Guanhua Chen.
@@ -193,19 +198,19 @@ for urban intelligence
 \end{itemize}
 
 \vspace{5pt}
-\entry{Southern University of Science and Technology (SUSTech)}{Shenzhen, China}
+\entry{\unilogo{sustech.png}\enskip Southern University of Science and Technology (SUSTech)}{Shenzhen, China}
 \textit{B.E.\ in Computer Science} \hfill \textit{2020 -- 2024}
 \begin{itemize}
   \item \textbf{Advisors}: Prof.~Zipei Fan, Prof.~Xuan Song.
   \item GPA 90.2/100 (Top 10\%); Outstanding Graduate \& Outstanding Thesis (Top 5\%, 2024).
-  \item \textbf{Visiting}: \href{https://www.csis.u-tokyo.ac.jp/}{UTokyo CSIS} (2022, 2023); \href{https://www.comp.nus.edu.sg/}{NUS CS} (2022).
+  \item \textbf{Visiting}: \unilogo{utokyo.png}\,\href{https://www.csis.u-tokyo.ac.jp/}{UTokyo CSIS} (2022, 2023); \unilogo{nus.png}\,\href{https://www.comp.nus.edu.sg/}{NUS CS} (2022).
 \end{itemize}
 
 % ── EXPERIENCE ───────────────────────────────────────────────
 \section{Experience}
 
 \entry{Microsoft Research Asia $\cdot$ GenAI Group}{Beijing, China}
-\textit{Research Intern}, supervised by \href{https://scholar.google.com/citations?user=wEfQgPgAAAAJ&hl=en}{Dr.~Li Dong}. \hfill \textit{Nov 2025 -- Present}\\[1pt]
+\textit{Research Intern}, supervised by Dr.~Li Dong. \hfill \textit{Nov 2025 -- Present}\\[1pt]
 On-policy distillation and agent harness.
 
 \vspace{4pt}
@@ -245,7 +250,7 @@ MCP client layer, and self-evolving skill system.
 
 \pub{PlanGPT: Enhancing Urban Planning with a Tailored Language Model}{\turban}
     {\me{He Zhu}, Guanhua Chen, Wenjia Zhang\corr}
-    {ACL Industry 2025 $\cdot$ {\bfseries\color{oralred}Oral (Top 1\%)} \quad[\href{https://arxiv.org/abs/2402.19273}{paper}]}
+    {ACL Industry 2025 $\cdot$ {\bfseries\color{oralred}Oral} \quad[\href{https://arxiv.org/abs/2402.19273}{paper}]}
 
 \pub{Anchored Supervised Fine-Tuning}{\talign}
     {\me{He Zhu}\eqstar, Junyou Su\eqstar, Peng Lai\eqstar,
