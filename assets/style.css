@@ -132,6 +132,12 @@ body {
   height: 22px;
 }
 
+.cv-btn-group {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
 .resume-btn {
   display: inline-flex;
   align-items: center;
@@ -141,8 +147,9 @@ body {
   background-color: #f06292;
   color: #fff;
   font-weight: 600;
+  font-size: 0.85em;
   text-decoration: none;
-  width: 100%;
+  flex: 1;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 

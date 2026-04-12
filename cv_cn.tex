@@ -1,0 +1,315 @@
+% ============================================================
+%  朱赫 — 个人简历 (中文版)
+%  Style: clean academic CV (matching English cv.tex layout)
+% ============================================================
+\documentclass[10pt, a4paper]{article}
+
+% ── Encoding & CJK Support ──────────────────────────────────
+\usepackage[UTF8, heading=false]{ctex}
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+\usepackage{mathpazo}
+\usepackage{microtype}
+
+% ── Page Layout ──────────────────────────────────────────────
+% Uniform tight margins so page 2 can fit all publications + honors
+\usepackage[top=1.0cm, bottom=1.0cm, left=1.5cm, right=1.5cm]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ── Packages ─────────────────────────────────────────────────
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+
+% ── Colors ───────────────────────────────────────────────────
+\definecolor{headcol}{RGB}{30, 30, 30}
+\definecolor{rulecol}{RGB}{180, 50, 30}
+\definecolor{secline}{RGB}{200, 200, 200}
+\definecolor{linkcol}{RGB}{40, 80, 160}
+\definecolor{dategray}{RGB}{100, 100, 100}
+\definecolor{yearcolor}{RGB}{80, 80, 80}
+
+% Tag colors
+\definecolor{tagalign}{RGB}{200, 60, 30}
+\definecolor{tagdata}{RGB}{30, 110, 180}
+\definecolor{tagurban}{RGB}{40, 140, 90}
+\definecolor{tageff}{RGB}{130, 50, 160}
+\definecolor{tagpost}{RGB}{180, 100, 20}
+\definecolor{oralred}{RGB}{200, 40, 30}
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor   = linkcol,
+  linkcolor  = linkcol,
+  pdfauthor  = {He Zhu},
+  pdftitle   = {朱赫 — 个人简历},
+}
+
+% ── Section Headers ──────────────────────────────────────────
+\titleformat{\section}
+  {\normalsize\bfseries\color{headcol}}
+  {}{0em}{}
+  [\vspace{2pt}{\color{secline}\rule{\linewidth}{0.4pt}}\vspace{-2pt}]
+\titlespacing*{\section}{0pt}{12pt}{5pt}
+
+% ── Badge Tags ───────────────────────────────────────────────
+\newcommand{\badge}[2]{%
+  \tikz[baseline=(x.base)]{
+    \node[inner xsep=3.5pt, inner ysep=1.6pt, rounded corners=2.5pt,
+          draw=#1, line width=0.45pt,
+          text=#1, font=\fontsize{6}{7}\selectfont\sffamily]
+      (x) {#2};
+  }%
+}
+
+\newcommand{\talign}{\badge{tagalign}{alignment}}
+\newcommand{\tdata} {\badge{tagdata}{data-centric}}
+\newcommand{\turban}{\badge{tagurban}{urban AI}}
+\newcommand{\teff}  {\badge{tageff}{efficiency}}
+\newcommand{\tpost} {\badge{tagpost}{post-train}}
+
+% ── Bullet Lists ─────────────────────────────────────────────
+\setlist[itemize,1]{
+  leftmargin = 1.3em,
+  label      = {\small\textbullet},
+  itemsep    = 1pt,
+  topsep     = 2pt,
+  parsep     = 0pt,
+}
+
+% ── Helpers ──────────────────────────────────────────────────
+\newcommand{\unilogo}[1]{%
+  \raisebox{-0.5pt}{\includegraphics[height=8pt]{assets/logos/cv/#1}}%
+}
+\newcommand{\me}[1]{\textbf{#1}}
+\newcommand{\eqstar}{$^{*}$}
+\newcommand{\corr}{$^{\dagger}$}
+
+% Configurable publication vertical skip
+\def\pubskip{3pt}
+
+% Single publication block
+\newcommand{\pub}[4]{%
+  \vspace{\pubskip}%
+  \noindent\textbf{#1}\ifstrempty{#2}{}{\enskip #2}%
+  \begin{itemize}[topsep=0pt]
+    \item #3
+    \item \textit{#4}
+  \end{itemize}%
+}
+
+% Co-authored publication (no author line)
+\newcommand{\copub}[3]{%
+  \vspace{\pubskip}%
+  \noindent\textbf{#1}\ifstrempty{#2}{}{\enskip #2}%
+  \begin{itemize}[topsep=0pt]
+    \item \textit{#3}
+  \end{itemize}%
+}
+
+% Education / Experience entry
+\newcommand{\entry}[2]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & {\small\color{dategray}#2}
+  \end{tabularx}%
+  \par\vspace{0pt}%
+}
+
+% ── Header / Footer ──────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\footnotesize\color{dategray}\thepage}
+
+% ============================================================
+\begin{document}
+\thispagestyle{empty}
+
+% ── NAME BLOCK ───────────────────────────────────────────────
+\noindent
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  \raisebox{-4pt}{%
+    {\fontsize{28}{32}\selectfont\bfseries 朱赫}%
+    \quad{\large\color{dategray}2027应届}%
+  }
+  &
+  \begin{tabular}[b]{@{}r@{}}
+    \small\href{mailto:zhuhe@stu.pku.edu.cn}{zhuhe@stu.pku.edu.cn}\\[2pt]
+    \small\href{https://zhuchichi56.github.io}{https://zhuchichi56.github.io}
+  \end{tabular}
+\end{tabularx}
+
+\vspace{6pt}
+{\color{rulecol}\rule{\linewidth}{1.2pt}}
+\vspace{4pt}
+
+% ── ABOUT ────────────────────────────────────────────────────
+\section{个人简介}
+
+我目前是\textbf{北京大学}硕士研究生（导师：张文佳教授、陈冠华教授），
+本科毕业于\textbf{南方科技大学}计算机科学与工程系，
+现于\textbf{微软亚洲研究院} GenAI 组（Dr.~Li Dong）担任研究实习生。
+
+\vspace{5pt}
+我的研究聚焦于\textbf{LLM post-training data}——什么是高质量的后训练数据、
+如何大规模地合成与筛选数据
+(\href{https://aclanthology.org/2025.findings-acl.906/}{FANNO},
+ \href{https://arxiv.org/abs/2601.23006}{InstructDiff},
+ \href{https://aclanthology.org/2025.findings-acl.911/}{Tag-Instruct},
+ \href{https://openreview.net/forum?id=4fclVIrUg2}{AlignDiff})，
+以及如何设计高效的训练目标来习得新能力而不遗忘已有知识
+(\href{https://arxiv.org/abs/2509.23753}{ASFT}, \href{https://arxiv.org/abs/2510.10974}{CFT})。
+此外，我还将上述研究视角应用于城市智能领域的垂直大模型建设
+(\href{https://arxiv.org/abs/2402.19273}{PlanGPT},
+ \href{https://arxiv.org/abs/2505.14481}{PlanGPT-VL},
+ \href{https://app.urbanclaw.net}{UrbanClaw})。
+
+% ── EDUCATION ────────────────────────────────────────────────
+\section{教育经历}
+
+\entry{\unilogo{pku.png}\enskip 北京大学}{北京}
+\textit{理学硕士，智慧城市与数据科学} \hfill \textit{2024 -- 至今}
+\begin{itemize}
+  \item \textbf{导师}：张文佳教授、陈冠华教授
+  \item \textbf{研究方向}：Data-centric LLM post-training, on-policy distillation, alignment
+\end{itemize}
+
+\vspace{6pt}
+\entry{\unilogo{sustech.png}\enskip 南方科技大学}{深圳}
+\textit{工学学士，计算机科学与工程} \hfill \textit{2020 -- 2024}
+\begin{itemize}
+  \item \textbf{导师}：范子沛教授、宋轩教授
+  \item GPA 90.2/100（前10\%）；优秀毕业生、优秀毕业设计（前5\%，2024）
+  \item \textbf{访问}：\unilogo{utokyo.png}\,\href{https://www.csis.u-tokyo.ac.jp/}{东京大学 CSIS}（2022, 2023）；\unilogo{nus.png}\,\href{https://www.comp.nus.edu.sg/}{新加坡国立大学 CS}（2022）
+\end{itemize}
+
+% ── EXPERIENCE ───────────────────────────────────────────────
+\section{实习与工作经历}
+
+\entry{\unilogo{microsoft.png}\enskip 微软亚洲研究院 $\cdot$ GenAI 组}{北京}
+\textit{研究实习生}，导师：Dr.~Li Dong \hfill \textit{2025.11 -- 至今}\\[1pt]
+On-policy distillation \& agent harness
+
+\vspace{5pt}
+\entry{\unilogo{pjlab.png}\enskip 上海人工智能实验室 $\cdot$ OpenData Lab}{上海}
+\textit{研究实习生}，foundation language models \hfill \textit{2025.05 -- 2025.10}
+
+\vspace{5pt}
+\entry{\unilogo{sensetime.png}\enskip 商汤科技 $\cdot$ Foundation Language Model Center}{深圳}
+\textit{研究实习生}，foundation models \hfill \textit{2024.06 -- 2024.09}
+
+\vspace{5pt}
+\entry{\unilogo{locationmind.png}\enskip LocationMind}{东京，日本}
+\textit{项目助理}，autonomous driving algorithms \hfill \textit{2023.06 -- 2023.12}
+
+% ── PROJECTS ─────────────────────────────────────────────────
+\section{代表项目}
+
+\noindent\textbf{PlanGPT 系列} \hfill
+{\small\href{https://plangpt.github.io}{plangpt.github.io}}\\[2pt]
+首个系统性研究 LLM 赋能城市规划的工作。包含
+\textbf{PlanGPT}（面向规划方案生成的文本大模型）、
+\textbf{PlanGPT-VL}（面向规划图件理解的 vision-language model）、
+\textbf{PlanGPT-R1}（reasoning-enhanced model）及
+\textbf{UP-Bench / PlanBench-V}（benchmarks）。
+
+\vspace{5pt}
+\noindent\textbf{UrbanClaw} \hfill
+{\small\href{https://app.urbanclaw.net}{app.urbanclaw.net}}\\[2pt]
+AI 驱动的城市规划 agent，具备 multi-agent collaboration、Docker sandbox、
+MCP client layer 及 self-evolving skill system。
+
+\vfill
+
+% ============================================================
+% PAGE 2 — switch to tighter spacing
+% ============================================================
+\newpage
+\def\pubskip{1pt}
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+
+% ── PUBLICATIONS ─────────────────────────────────────────────
+\section{学术论文}
+
+\noindent\textit{第一作者 / 通讯作者}
+
+\pub{PlanGPT: Enhancing Urban Planning with a Tailored Language Model}{\turban}
+    {\me{He Zhu}, Guanhua Chen, Wenjia Zhang\corr}
+    {ACL Industry 2025 $\cdot$ {\bfseries\color{oralred}Oral} \quad[\href{https://arxiv.org/abs/2402.19273}{paper}]}
+
+\pub{Anchored Supervised Fine-Tuning}{\talign}
+    {\me{He Zhu}\eqstar, Junyou Su\eqstar, Peng Lai\eqstar,
+     Wenjia Zhang, Linyi Yang, Guanhua Chen\corr}
+    {ICLR 2026 \quad[\href{https://arxiv.org/abs/2509.23753}{paper}]}
+
+\pub{InstructDiff: Domain-Adaptive Data Selection via Differential Entropy}{\tdata}
+    {Junyou Su\eqstar, \me{He Zhu}\eqstar\corr, Guanhua Chen\corr}
+    {ACL 2026 (Main) \quad[\href{https://arxiv.org/abs/2601.23006}{paper}]}
+
+\pub{FANNO: Augmenting High-Quality Instruction Data with Open-Sourced LLMs Only}{\tdata}
+    {\me{He Zhu}, Yifan Ding, Yicheng Tao, \ldots, Guanhua Chen\corr}
+    {ACL 2025 (Findings) \quad[\href{https://aclanthology.org/2025.findings-acl.906/}{paper}]}
+
+\pub{Tag-Instruct: Controlled Instruction Complexity Enhancement}{\tdata}
+    {\me{He Zhu}, Zhiwen Ruan, Junyou Su, \ldots, Guanhua Chen\corr}
+    {ACL 2025 (Findings) \quad[\href{https://aclanthology.org/2025.findings-acl.911/}{paper}]}
+
+\pub{PlanGPT-VL: Vision-Language Model for Urban Planning Maps}{\turban}
+    {\me{He Zhu}\eqstar, Junyou Su\eqstar, Minxin Chen\eqstar,
+     \ldots, Wenjia Zhang\corr}
+    {EMNLP Industry 2025 \quad[\href{https://arxiv.org/abs/2505.14481}{paper}]}
+
+\pub{Personalized Individual Trajectory Prediction via Meta-Learning}{\turban}
+    {\me{He Zhu}, Liyu Zhang, Zipei Fan}
+    {SIGSPATIAL 2022 $\cdot$ {\bfseries\color{oralred}Oral} \quad[\href{https://dl.acm.org/doi/abs/10.1145/3557915.3565536}{paper}]}
+
+\pub{AlignDiff: Exploiting Model-Intrinsic Information for Better Data Selection}{\tdata}
+    {Peng Lai\eqstar, \me{He Zhu}\eqstar, Zhiwen Ruan, \ldots, Yang Liu, Guanhua Chen\corr}
+    {Under Review, 2026 \quad[\href{https://openreview.net/forum?id=4fclVIrUg2}{paper}]}
+
+\pub{Towards Fair and Comprehensive Evaluation of Routers
+     in Collaborative LLM Systems}{\teff}
+    {Wanxing Wu\eqstar, \me{He Zhu}\eqstar, Yixia Li\eqstar,
+     Yun Chen, Guanhua Chen\corr}
+    {Under Review, 2026 \quad[\href{https://arxiv.org/abs/2602.11877}{paper}]}
+
+\vspace{2pt}
+\noindent\textit{合作论文（精选）}
+
+\copub{Enhancing LLM Reasoning via Selective Critical Token Fine-Tuning}{\talign}
+    {Under Review, 2026 \quad[\href{https://arxiv.org/abs/2510.10974}{paper}]}
+
+\copub{Dripper: Token-Efficient Main HTML Extraction with a Lightweight LM}{\talign}
+    {Under Review, 2026 \quad[\href{https://arxiv.org/abs/2511.23119}{paper}]}
+
+\copub{Topic Over Source: The Key to Effective Data Mixing for LLM Pre-training}{\tdata}
+    {Under Review, 2026 \quad[\href{https://arxiv.org/abs/2502.16802}{paper}]}
+
+\copub{LayAlign: Enhancing Multilingual Reasoning via Layer-wise Adaptive Fusion}{\talign}
+    {NAACL 2025 (Findings)}
+
+\copub{ToolExpNet: Optimizing Multi-Tool Selection in LLMs with Experience Networks}{\teff}
+    {ACL 2025 (Findings)}
+
+\copub{HHGNN: Heterogeneous Hypergraph Neural Network for Trajectory Prediction}{\turban}
+    {ICRA 2024}
+
+% ── HONORS & SERVICE ─────────────────────────────────────────
+\section{荣誉与学术服务}
+
+\begin{itemize}[itemsep=0pt, topsep=1pt]
+  \item 北京大学优秀团支书（\textbf{前5\%}，2025）；北京大学学生代表（2025）
+  \item 南方科技大学优秀毕业生、优秀毕业设计（\textbf{前5\%}，2024）；年度优秀学生（2021, 2022, 2023）
+  \item \textbf{审稿人}：ACL Rolling Review (ARR, 2024--2026)
+\end{itemize}
+
+\end{document}
