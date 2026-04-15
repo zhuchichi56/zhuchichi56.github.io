@@ -13,7 +13,7 @@
 
 % ── Page Layout ──────────────────────────────────────────────
 % Uniform tight margins so page 2 can fit all publications + honors
-\usepackage[top=1.0cm, bottom=1.0cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage[top=0.7cm, bottom=0.7cm, left=1.5cm, right=1.5cm]{geometry}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
@@ -58,7 +58,7 @@
   {\normalsize\bfseries\color{headcol}}
   {}{0em}{}
   [\vspace{2pt}{\color{secline}\rule{\linewidth}{0.4pt}}\vspace{-2pt}]
-\titlespacing*{\section}{0pt}{12pt}{5pt}
+\titlespacing*{\section}{0pt}{6pt}{3pt}
 
 % ── Badge Tags ───────────────────────────────────────────────
 \newcommand{\badge}[2]{%
@@ -155,20 +155,26 @@
 % ── ABOUT ────────────────────────────────────────────────────
 \section{个人简介}
 
-我目前是\textbf{北京大学}硕士研究生（导师：张文佳教授、陈冠华教授），
+24岁，\textbf{北京大学}硕士研究生（导师：张文佳教授、陈冠华教授），
 本科毕业于\textbf{南方科技大学}计算机科学与工程系，
 现于\textbf{微软亚洲研究院} GenAI 组（Dr.~Li Dong）担任研究实习生。
+累计发表大模型算法相关论文第一作者/通讯作者 9 篇（含 2 篇 under review）。
+曾获腾讯青云实习生计划（CSIG, 2025）、美团北斗实习生计划（M17, 2026）、
+九坤基础语言模型实习生（2026）等 offer。
 
-\vspace{5pt}
-我的研究聚焦于\textbf{LLM post-training data}——什么是高质量的后训练数据、
-如何大规模地合成与筛选数据
+\vspace{3pt}
+研究聚焦于\textbf{大模型后训练（LLM Post-Training）算法}，涵盖两条主线：
+\textbf{(1) 高质量后训练数据的合成与筛选}——如何定义高质量的后训练数据，
+并提出可规模化的自动合成与质量筛选方法
 (\href{https://aclanthology.org/2025.findings-acl.906/}{FANNO},
  \href{https://arxiv.org/abs/2601.23006}{InstructDiff},
  \href{https://aclanthology.org/2025.findings-acl.911/}{Tag-Instruct},
- \href{https://openreview.net/forum?id=4fclVIrUg2}{AlignDiff})，
-以及如何设计高效的训练目标来习得新能力而不遗忘已有知识
-(\href{https://arxiv.org/abs/2509.23753}{ASFT}, \href{https://arxiv.org/abs/2510.10974}{CFT})。
-此外，我还将上述研究视角应用于城市智能领域的垂直大模型建设
+ \href{https://openreview.net/forum?id=4fclVIrUg2}{AlignDiff})；
+\textbf{(2) 高效训练目标设计}——探索如何在习得新能力的同时缓解灾难性遗忘
+(\href{https://arxiv.org/abs/2509.23753}{ASFT},
+ \href{https://arxiv.org/abs/2510.10974}{CFT})。
+此外，将上述后训练研究范式延伸至\textbf{垂直领域大模型}建设，
+在城市智能场景中完成了从数据构建、模型训练到系统落地的全链路实践
 (\href{https://arxiv.org/abs/2402.19273}{PlanGPT},
  \href{https://arxiv.org/abs/2505.14481}{PlanGPT-VL},
  \href{https://app.urbanclaw.net}{UrbanClaw})。
@@ -183,7 +189,7 @@
   \item \textbf{研究方向}：Data-centric LLM post-training, on-policy distillation, alignment
 \end{itemize}
 
-\vspace{6pt}
+\vspace{4pt}
 \entry{\unilogo{sustech.png}\enskip 南方科技大学}{深圳}
 \textit{工学学士，计算机科学与工程} \hfill \textit{2020 -- 2024}
 \begin{itemize}
@@ -199,15 +205,15 @@
 \textit{研究实习生}，导师：Dr.~Li Dong \hfill \textit{2025.11 -- 至今}\\[1pt]
 On-policy distillation \& agent harness
 
-\vspace{5pt}
+\vspace{3pt}
 \entry{\unilogo{pjlab.png}\enskip 上海人工智能实验室 $\cdot$ OpenData Lab}{上海}
 \textit{研究实习生}，foundation language models \hfill \textit{2025.05 -- 2025.10}
 
-\vspace{5pt}
+\vspace{3pt}
 \entry{\unilogo{sensetime.png}\enskip 商汤科技 $\cdot$ Foundation Language Model Center}{深圳}
 \textit{研究实习生}，foundation models \hfill \textit{2024.06 -- 2024.09}
 
-\vspace{5pt}
+\vspace{3pt}
 \entry{\unilogo{locationmind.png}\enskip LocationMind}{东京，日本}
 \textit{项目助理}，autonomous driving algorithms \hfill \textit{2023.06 -- 2023.12}
 
@@ -222,13 +228,11 @@ On-policy distillation \& agent harness
 \textbf{PlanGPT-R1}（reasoning-enhanced model）及
 \textbf{UP-Bench / PlanBench-V}（benchmarks）。
 
-\vspace{5pt}
+\vspace{3pt}
 \noindent\textbf{UrbanClaw} \hfill
 {\small\href{https://app.urbanclaw.net}{app.urbanclaw.net}}\\[2pt]
 AI 驱动的城市规划 agent，具备 multi-agent collaboration、Docker sandbox、
 MCP client layer 及 self-evolving skill system。
-
-\vfill
 
 % ============================================================
 % PAGE 2 — switch to tighter spacing
