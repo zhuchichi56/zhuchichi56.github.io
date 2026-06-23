@@ -1,18 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #fff;
-  color: #000;
-  font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1.45;
-}
-
 a {
   color: #1772d0;
   text-decoration: none;
@@ -24,246 +11,55 @@ a:hover {
   text-decoration: none;
 }
 
-p {
-  margin: 0 0 12px;
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #000;
 }
 
 strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
   font-weight: 700;
 }
 
-.page {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 24px 0 40px;
-}
-
-.intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
-  gap: 20px;
-  align-items: center;
-  padding: 20px;
-}
-
-.intro-text {
-  min-width: 0;
-}
-
-h1 {
-  margin: 0 0 18px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 1.1;
-}
-
-.intro-photo {
-  display: flex;
-  justify-content: center;
-}
-
-.intro-photo img {
-  width: 100%;
-  max-width: 240px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 0;
-}
-
-.links {
-  text-align: center;
-}
-
-.links span {
-  color: #555;
-  margin: 0 6px;
-}
-
-.contact-line {
-  color: #555;
-  text-align: center;
-  font-size: 13px;
-}
-
-.section-block {
-  padding: 10px 20px;
-}
-
-h2 {
-  margin: 0 0 10px;
+heading {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
-  font-weight: 400;
-  line-height: 1.2;
+}
+
+papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+name {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
 }
 
 h3 {
-  margin: 18px 0 6px;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
-}
-
-.note {
-  color: #555;
-}
-
-.news-list {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.news-list li {
-  margin-bottom: 4px;
-}
-
-.award {
-  color: rgb(183, 0, 0);
-  font-weight: 700;
-}
-
-.paper-row {
-  display: grid;
-  grid-template-columns: 200px minmax(0, 1fr);
-  gap: 20px;
-  align-items: center;
-  padding: 20px;
-  margin: 0 -20px;
-}
-
-.paper-row.highlight {
-  background: #ffffd0;
-}
-
-.paper-row.compact {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
-.paper-media {
-  width: 200px;
-  height: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background: #f6f6f6;
-}
-
-.paper-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-.paper-title {
-  font-weight: 700;
-}
-
-.paper-content p {
-  margin: 10px 0 0;
-}
-
-.compact-list {
-  margin-top: 14px;
-}
-
-.text-row {
-  display: grid;
-  grid-template-columns: 120px minmax(0, 1fr);
-  gap: 20px;
-  align-items: center;
-  padding: 14px 0;
-}
-
-.org-logo {
-  width: 90px;
-  max-height: 78px;
-  object-fit: contain;
-  justify-self: center;
-}
-
-.org-logo.wide {
-  width: 120px;
-}
-
-.logo-box {
-  width: 90px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-self: center;
-  background: #edf4fb;
-  color: #1772d0;
-  border: 1px solid #d6e4f2;
-  font-weight: 700;
-  font-size: 22px;
-}
-
-.split-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 4px 0;
-}
-
-.split-row span:last-child {
-  white-space: nowrap;
-  color: #555;
-}
-
-footer {
-  padding: 24px 20px 0;
-  text-align: right;
-  font-size: 12px;
-  color: #555;
-}
-
-footer p {
   margin: 0;
 }
 
-@media (max-width: 760px) {
-  .page {
-    padding-top: 10px;
-  }
+img {
+  border: 0;
+}
 
-  .intro {
-    grid-template-columns: 1fr;
-  }
-
-  .intro-photo {
-    order: -1;
-  }
-
-  .intro-photo img {
-    max-width: 180px;
-  }
-
-  .paper-row,
-  .text-row {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-
-  .paper-media {
-    width: 100%;
-    height: 110px;
-  }
-
-  .org-logo,
-  .org-logo.wide,
-  .logo-box {
-    justify-self: start;
-  }
-
-  .split-row {
-    display: block;
-  }
-
-  .split-row span {
-    display: block;
-  }
+span.highlight {
+  background-color: #ffffd0;
 }
