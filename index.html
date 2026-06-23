@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>He Zhu - AI Researcher</title>
+    <meta
+      name="description"
+      content="He Zhu is an M.Sc. student at Peking University working on data-centric LLM post-training, instruction data, and urban AI."
+    />
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
     <div class="sidebar">
       <img src="assets/hezhu.jpg" alt="He Zhu" class="avatar" />
       <h2>He Zhu</h2>
-      <p>M.Phil. @ Peking University</p>
-      <p>Urban Intelligence &amp; Large Language Models</p>
+      <p>M.Sc. @ Peking University</p>
+      <p>LLM Post-Training &amp; Urban AI</p>
 
       <div class="sidebar-contact">
         <div class="contact-row center">📍 Beijing</div>
@@ -29,8 +33,8 @@
         <a href="#news">News</a>
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
-        <a href="#papers">First Author Paper</a>
-        <a href="#coauthor-papers">Select Co-authored Paper</a>
+        <a href="#papers">First-Author Papers</a>
+        <a href="#coauthor-papers">Selected Co-authored Papers</a>
         <a href="#experience">Experience</a>
         <a href="#research-appointments">Research Appointments</a>
         <a href="#honors">Honors &amp; Service</a>
@@ -81,48 +85,20 @@
       <section id="about">
         <h2>About</h2>
         <p>
-          I am <strong>HE ZHU (朱赫)</strong> (<a href="cv.pdf" download>CV</a> / <a href="cv_cn.pdf" download>中文</a>), an M.Phil. student in Smart City and Big Data at
+          I am <strong>HE ZHU (朱赫)</strong> (<a href="cv.pdf" download>CV</a> / <a href="cv_cn.pdf" download>中文</a>), an M.Sc. student in Smart City and Data Sciences at
           <img src="assets/logos/pku.png" alt="PKU" class="news-inline-logo" /> <strong>Peking University</strong>, advised by Prof. Wenjia Zhang and Prof. Guanhua Chen. I previously received my B.E. in Computer Science from the
-          <img src="assets/logos/sustech.png" alt="SUSTech" class="news-inline-logo" /> <strong>Southern University of Science and Technology</strong>, where I was advised by Prof. Zipei Fan and Prof. Xuan Song. My research centers on large language models for urban intelligence, focusing on instruction
-          data synthesis, supervised fine-tuning (SFT) mechanisms, and domain-specific deployment. I lead the <strong>PlanGPT</strong> series and am currently a research intern at
-          <img src="assets/logos/microsoft.png" alt="Microsoft" class="news-inline-logo" /> <strong>Microsoft Research Asia (GENAI Group)</strong>. I am also an <strong>Area Chair</strong> for <strong>EMNLP 2026</strong>.
+          <img src="assets/logos/sustech.png" alt="SUSTech" class="news-inline-logo" /> <strong>Southern University of Science and Technology</strong>, where I was advised by Prof. Zipei Fan and Prof. Xuan Song. I am currently a research intern at
+          <img src="assets/logos/microsoft.png" alt="Microsoft" class="news-inline-logo" /> <strong>Microsoft Research Asia (GenAI Group)</strong>, supervised by Dr. Li Dong, and serve as an <strong>Area Chair</strong> for <strong>EMNLP 2026</strong>.
         </p>
         <p>
-          My research interests broadly lie in the areas of Machine Learning (ML), Natural Language Processing (NLP), and Large Language Models (LLM). More specifically, I focus on data-centric LLM research and domain-specific deployment. I am also currently exploring <strong>On-Policy Distillation (OPD)</strong> and <strong>Agent Harness</strong>. My research includes:
+          My research centers on <strong>post-training data for large language models</strong>: what makes it good, how to synthesize and select it at scale, and how to design training objectives that acquire new capabilities efficiently while reducing catastrophic forgetting. I also apply this perspective to domain-specific foundation models for urban intelligence. My current interests include:
         </p>
         <ul class="inline-list">
-          <li><span class="label">(i) High-Quality Data Selection:</span> <a href="#paper-aligndiff">AlignDiff</a>, <a href="#paper-instructdiff">InstructDiff</a>, <a href="#paper-dripper">Dripper</a>, <a href="#paper-topic-over-source">Topic Over Source</a></li>
-          <li><span class="label">(ii) Scalable Data Synthesis:</span> <a href="#paper-fanno">FANNO</a>, <a href="#paper-tag-instruct">Tag-Instruct</a></li>
-          <li><span class="label">(iii) Fine-Tuning Mechanisms:</span> <a href="#paper-asft">ASFT</a>, <a href="#paper-cft">CFT</a></li>
-          <li><span class="label">(iv) Domain-Specific Foundation Models (Urban Intelligence):</span> <a href="#paper-plangpt">PlanGPT</a>, <a href="#paper-plangpt-vl">PlanGPT-VL</a></li>
+          <li><span class="label">(i) High-quality data selection:</span> <a href="#paper-aligndiff">AlignDiff</a>, <a href="#paper-instructdiff">InstructDiff</a>, <a href="#paper-dripper">Dripper</a>, <a href="#paper-topic-over-source">Topic Over Source</a></li>
+          <li><span class="label">(ii) Scalable data synthesis:</span> <a href="#paper-fanno">FANNO</a>, <a href="#paper-tag-instruct">Tag-Instruct</a></li>
+          <li><span class="label">(iii) Fine-tuning mechanisms:</span> <a href="#paper-asft">ASFT</a>, <a href="#paper-cft">CFT</a></li>
+          <li><span class="label">(iv) Domain-specific foundation models:</span> <a href="#paper-plangpt">PlanGPT</a>, <a href="#paper-plangpt-vl">PlanGPT-VL</a>, <a href="https://app.urbanclaw.net/" target="_blank" rel="noreferrer">UrbanClaw</a></li>
         </ul>
-        
-
-
-        <!-- <p>
-          My long-term goal is to <strong>mathematically define the data distributions that LLMs prefer, automatically generate
-          high-quality data, and inject it efficiently to continually improve model capability.</strong>
-        </p> -->
-
-        <!-- <h3>Research Interests</h3>
-        <ul class="inline-list">
-          <li><span class="label">Instruction Data Synthesis &amp; Filtering:</span> FANNO, Tag-Instruct, AlignDiff.</li>
-          <li><span class="label">Fine-Tuning Mechanisms:</span> Anchored SFT, Critic Token Fine-Tuning.</li>
-          <li><span class="label">Vertical Models &amp; Benchmarks:</span> PlanGPT, PlanGPT-VL, UP-Bench for urban planning.</li>
-        </ul>
-
-        <h3>Research Vision</h3>
-        
-
-        <h3>Collaborations</h3>
-        <p>
-          I have collaborated with SenseTime, Shanghai AI Lab (OpenData Lab), LocationMind Tokyo, SUSTech-NLP, UTokyo CSIS, and NUS.
-        </p> -->
-<!-- 
-        <ul class="inline-list">
-          <li>Research Keywords: Large Language Models, Data Synthesis, Planning AI, Multi-Agent Systems</li>
-          <li>Emails: zhuhe@stu.pku.edu.cn · zhuye140@gmail.com</li>
-        </ul> -->
       </section>
 
       <section id="news">
@@ -147,13 +123,13 @@
           <li class="item-with-logo">
             <img src="assets/logos/pku.png" alt="Peking University logo" />
             <div>
-              <strong>Peking University</strong> — M.S. Smart City &amp; Big Data, Advisor: Prof. Wenjia Zhang (Sep 2024 – Present).
+              <strong>Peking University</strong> — M.Sc. in Smart City &amp; Data Sciences, Advisors: Prof. Wenjia Zhang and Prof. Guanhua Chen (Sep 2024 – Present).
             </div>
           </li>
           <li class="item-with-logo">
             <img src="assets/logos/sustech.png" alt="SUSTech logo" />
             <div>
-              <strong>Southern University of Science and Technology</strong> — B.E. Computer Science, Advisor: Prof. Xuan Song (Sep 2020 – Jul 2024, GPA 90.2/100, top 10%).
+              <strong>Southern University of Science and Technology</strong> — B.E. in Computer Science, Advisors: Prof. Zipei Fan and Prof. Xuan Song (Sep 2020 – Jul 2024, GPA 90.2/100, top 10%).
             </div>
           </li>
         </ul>
@@ -194,7 +170,7 @@
       </section>
 
       <section id="papers">
-        <h2>First Author Paper</h2>
+        <h2>First-Author Papers</h2>
         <ul class="paper-list compact">
           <li id="paper-asft">
             <div class="paper-line">
@@ -246,7 +222,7 @@
           </li>
           <li id="paper-tag-instruct">
             <div class="paper-line">
-              <strong>Tag-Instruct: A Scalable Framework for Controlled Instruction-Tuning Data Synthesis</strong>
+              <strong>Tag-Instruct: Controlled Instruction Complexity Enhancement</strong>
               <span class="paper-venue">ACL 2025 (Findings)</span>
             </div>
             <div class="paper-line secondary">
@@ -283,7 +259,7 @@
           <li>
             <div class="paper-line">
               <strong>Towards Fair and Comprehensive Evaluation of Routers in Collaborative LLM Systems</strong>
-              <span class="paper-venue upcoming">ACL 2026 Submission</span>
+              <span class="paper-venue upcoming">Under Review, 2026</span>
             </div>
             <div class="paper-line secondary">
               <span class="paper-authors small">Wanxing Wu*, <strong>HE ZHU*</strong>, Yixia Li*, Yun Chen, Guanhua Chen<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
@@ -295,12 +271,12 @@
           <li id="paper-aligndiff">
             <div class="paper-line">
               <strong>AlignDiff: Exploiting Model-Intrinsic Information for Better Data Selection</strong>
-              <span class="paper-venue upcoming">ICML 2026 Submission</span>
+              <span class="paper-venue upcoming">Under Review, 2026</span>
             </div>
             <div class="paper-line secondary">
               <span class="paper-authors small">Peng Lai*, <strong>HE ZHU*</strong>, Zhiwen Ruan, Dongdong Zhang, Yun Chen, Peng Li, Furu Wei, Yang Liu, Guanhua Chen<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
               <span class="paper-links inline">
-                <a href="https://arxiv.org/abs/2602.11877"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
+                <a href="https://openreview.net/forum?id=4fclVIrUg2"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
               </span>
             </div>
           </li>
@@ -308,11 +284,12 @@
       </section>
 
       <section id="coauthor-papers">
-        <h2>Select Co-authored Paper</h2>
+        <h2>Selected Co-authored Papers</h2>
         <ul class="paper-list compact">
           <li id="paper-cft">
             <div class="paper-line">
-              <strong>Enhancing Large Language Model Reasoning via Selective Critical Token Fine-Tuning</strong>
+              <strong>Enhancing LLM Reasoning via Selective Critical Token Fine-Tuning</strong>
+              <span class="paper-venue upcoming">Under Review, 2026</span>
               <span class="paper-links inline">
                 <a href="https://arxiv.org/abs/2510.10974"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
               </span>
@@ -321,6 +298,7 @@
           <li id="paper-dripper">
             <div class="paper-line">
               <strong>Dripper: Token-Efficient Main HTML Extraction with a Lightweight LM</strong>
+              <span class="paper-venue upcoming">Under Review, 2026</span>
               <span class="paper-links inline">
                 <a href="https://arxiv.org/abs/2511.23119"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
               </span>
@@ -328,10 +306,29 @@
           </li>
           <li id="paper-topic-over-source">
             <div class="paper-line">
-              <strong>Topic Over Source: The Key to Effective Data Mixing for Language Models Pre-training</strong>
+              <strong>Topic Over Source: The Key to Effective Data Mixing for LLM Pre-training</strong>
+              <span class="paper-venue upcoming">Under Review, 2026</span>
               <span class="paper-links inline">
                 <a href="https://arxiv.org/abs/2502.16802"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
               </span>
+            </div>
+          </li>
+          <li>
+            <div class="paper-line">
+              <strong>LayAlign: Enhancing Multilingual Reasoning via Layer-wise Adaptive Fusion</strong>
+              <span class="paper-venue">NAACL 2025 (Findings)</span>
+            </div>
+          </li>
+          <li>
+            <div class="paper-line">
+              <strong>ToolExpNet: Optimizing Multi-Tool Selection in LLMs with Experience Networks</strong>
+              <span class="paper-venue">ACL 2025 (Findings)</span>
+            </div>
+          </li>
+          <li>
+            <div class="paper-line">
+              <strong>HHGNN: Heterogeneous Hypergraph Neural Network for Trajectory Prediction</strong>
+              <span class="paper-venue">ICRA 2024</span>
             </div>
           </li>
         </ul>
@@ -343,19 +340,19 @@
           <li class="item-with-logo">
             <img src="assets/logos/microsoft.png" alt="Microsoft logo" />
             <div>
-              <strong>Microsoft Research Asia · GENAI Group</strong> — Research Intern, Prof. Li Dong (Oct 2025 – Present).
+              <strong>Microsoft Research Asia · GenAI Group</strong> — Research Intern, supervised by Dr. Li Dong (Nov 2025 – Present).
             </div>
           </li>
           <li class="item-with-logo">
             <img src="assets/logos/pjlab.png" alt="Shanghai AI Lab logo" />
             <div>
-              <strong>Shanghai AI Laboratory · OpenData Lab</strong> — Researcher, foundation language models (May 2025 – Oct 2025).
+              <strong>Shanghai AI Laboratory · OpenData Lab</strong> — Research Intern, foundation language models (May 2025 – Oct 2025).
             </div>
           </li>
           <li class="item-with-logo">
             <img src="assets/logos/sensetime.png" alt="SenseTime logo" />
             <div>
-              <strong>SenseTime · Foundation Language Model Center</strong> — Researcher, foundation models (Jun 2024 – Sep 2024).
+              <strong>SenseTime · Foundation Language Model Center</strong> — Research Intern, foundation models (Jun 2024 – Sep 2024).
             </div>
           </li>
           <li class="item-with-logo">
@@ -396,10 +393,11 @@
         <h2>Honors &amp; Service</h2>
         <ul class="honors-inline-list">
           <li>Outstanding Youth League Secretary, Peking University — led the branch to Five-Star recognition (2025)</li>
+          <li>Peking University Student Representative (2025)</li>
           <li>Outstanding Graduate &amp; Outstanding Thesis, Dept. of CS, SUSTech (Top 5%, 2024)</li>
           <li>Annual Outstanding Student, SUSTech (2021, 2022, 2023)</li>
           <li>Area Chair: EMNLP 2026</li>
-          <li>Reviewer: ARR (ACL Rolling Review)</li>
+          <li>Reviewer: ARR (ACL Rolling Review, 2024–2026)</li>
         </ul>
       </section>
     </div>
