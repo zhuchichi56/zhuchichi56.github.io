@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>He Zhu - AI Researcher</title>
+    <title>He Zhu</title>
     <meta
       name="description"
       content="He Zhu is an M.Sc. student at Peking University working on data-centric LLM post-training, instruction data, and urban AI."
@@ -11,395 +11,411 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <div class="sidebar">
-      <img src="assets/hezhu.jpg" alt="He Zhu" class="avatar" />
-      <h2>He Zhu</h2>
-      <p>M.Sc. @ Peking University</p>
-      <p>LLM Post-Training &amp; Urban AI</p>
-
-      <div class="sidebar-contact">
-        <div class="contact-row center">📍 Beijing</div>
-        <div class="contact-row center"><img src="assets/logos/gmail.svg" alt="Gmail" class="contact-logo" /> zhuye140@gmail.com</div>
-        <div class="contact-row center"><span class="contact-icon">☎</span> (+86) 189-0301-0858</div>
-      </div>
-
-      <div class="cv-btn-group">
-        <a class="resume-btn" href="cv.pdf" download>CV (EN)</a>
-        <a class="resume-btn" href="cv_cn.pdf" download>CV (中文)</a>
-      </div>
-
-      <nav>
-        <a href="#about" class="active">About</a>
-        <a href="#news">News</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#papers">First-Author Papers</a>
-        <a href="#coauthor-papers">Selected Co-authored Papers</a>
-        <a href="#experience">Experience</a>
-        <a href="#research-appointments">Research Appointments</a>
-        <a href="#honors">Honors &amp; Service</a>
-      </nav>
-
-      <div class="sidebar-footer">
-        <div class="contact-icons">
-          <a
-            href="mailto:zhuhe@stu.pku.edu.cn"
-            aria-label="Email"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src="assets/logos/email.svg" alt="Email" />
-          </a>
-          <a
-            href="https://github.com/zhuchichi56"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-          >
-            <img src="assets/logos/github.svg" alt="GitHub logo" />
-          </a>
-          <a
-            href="https://scholar.google.com/citations?user=zhuchichi56"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Google Scholar"
-          >
-            <img
-              src="assets/logos/google-scholar.svg"
-              alt="Google Scholar logo"
-            />
-          </a>
-          <a
-            href="https://app.urbanclaw.net/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="UrbanClaw"
-          >
-            <img src="assets/logos/globe.svg" alt="UrbanClaw" />
-          </a>
+    <main class="page">
+      <section class="intro" id="about">
+        <div class="intro-text">
+          <h1>He Zhu</h1>
+          <p>
+            I am <strong>HE ZHU (朱赫)</strong>, an M.Sc. student in Smart City
+            and Data Sciences at <a href="https://www.pku.edu.cn/" target="_blank" rel="noreferrer">Peking University</a>,
+            advised by Prof. Wenjia Zhang and Prof. Guanhua Chen. I previously
+            received my B.E. in Computer Science from
+            <a href="https://www.sustech.edu.cn/" target="_blank" rel="noreferrer">Southern University of Science and Technology</a>,
+            advised by Prof. Zipei Fan and Prof. Xuan Song.
+          </p>
+          <p>
+            I work on <strong>post-training data for large language models</strong>:
+            what makes it good, how to synthesize and select it at scale, and
+            how to design training objectives that acquire new capabilities
+            efficiently while reducing catastrophic forgetting. I am currently
+            a research intern at <strong>Microsoft Research Asia, GenAI Group</strong>,
+            supervised by Dr. Li Dong.
+          </p>
+          <p>
+            I lead the <strong>PlanGPT</strong> series for urban intelligence and
+            also explore on-policy distillation and agent harnesses. I serve as
+            an <strong>Area Chair for EMNLP 2026</strong>.
+          </p>
+          <p class="links">
+            <a href="mailto:zhuhe@stu.pku.edu.cn">Email</a>
+            <span>/</span>
+            <a href="cv.pdf">CV</a>
+            <span>/</span>
+            <a href="cv_cn.pdf">中文简历</a>
+            <span>/</span>
+            <a href="https://scholar.google.com/citations?user=zhuchichi56" target="_blank" rel="noreferrer">Google Scholar</a>
+            <span>/</span>
+            <a href="https://github.com/zhuchichi56" target="_blank" rel="noreferrer">GitHub</a>
+            <span>/</span>
+            <a href="https://app.urbanclaw.net/" target="_blank" rel="noreferrer">UrbanClaw</a>
+          </p>
+          <p class="contact-line">Beijing · zhuye140@gmail.com · (+86) 189-0301-0858</p>
         </div>
-      </div>
-    </div>
-
-    <div class="content">
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          I am <strong>HE ZHU (朱赫)</strong> (<a href="cv.pdf" download>CV</a> / <a href="cv_cn.pdf" download>中文</a>), an M.Sc. student in Smart City and Data Sciences at
-          <img src="assets/logos/pku.png" alt="PKU" class="news-inline-logo" /> <strong>Peking University</strong>, advised by Prof. Wenjia Zhang and Prof. Guanhua Chen. I previously received my B.E. in Computer Science from the
-          <img src="assets/logos/sustech.png" alt="SUSTech" class="news-inline-logo" /> <strong>Southern University of Science and Technology</strong>, where I was advised by Prof. Zipei Fan and Prof. Xuan Song. I am currently a research intern at
-          <img src="assets/logos/microsoft.png" alt="Microsoft" class="news-inline-logo" /> <strong>Microsoft Research Asia (GenAI Group)</strong>, supervised by Dr. Li Dong, and serve as an <strong>Area Chair</strong> for <strong>EMNLP 2026</strong>.
-        </p>
-        <p>
-          My research centers on <strong>post-training data for large language models</strong>: what makes it good, how to synthesize and select it at scale, and how to design training objectives that acquire new capabilities efficiently while reducing catastrophic forgetting. I also apply this perspective to domain-specific foundation models for urban intelligence. My current interests include:
-        </p>
-        <ul class="inline-list">
-          <li><span class="label">(i) High-quality data selection:</span> <a href="#paper-aligndiff">AlignDiff</a>, <a href="#paper-instructdiff">InstructDiff</a>, <a href="#paper-dripper">Dripper</a>, <a href="#paper-topic-over-source">Topic Over Source</a></li>
-          <li><span class="label">(ii) Scalable data synthesis:</span> <a href="#paper-fanno">FANNO</a>, <a href="#paper-tag-instruct">Tag-Instruct</a></li>
-          <li><span class="label">(iii) Fine-tuning mechanisms:</span> <a href="#paper-asft">ASFT</a>, <a href="#paper-cft">CFT</a></li>
-          <li><span class="label">(iv) Domain-specific foundation models:</span> <a href="#paper-plangpt">PlanGPT</a>, <a href="#paper-plangpt-vl">PlanGPT-VL</a>, <a href="https://app.urbanclaw.net/" target="_blank" rel="noreferrer">UrbanClaw</a></li>
-        </ul>
+        <div class="intro-photo">
+          <img src="assets/hezhu.jpg" alt="He Zhu profile photo" />
+        </div>
       </section>
 
-      <section id="news">
-        <h2 class="news-title">📰 News</h2>
-        <div class="news-scroll">
+      <section class="section-block" id="news">
+        <h2>News</h2>
         <ul class="news-list">
-          <li><strong>2026.06:</strong> 🎉 I will serve as an <strong>Area Chair</strong> for <strong>EMNLP 2026</strong>.</li>
-          <li><strong>2026.04:</strong> 🎉🎉 InstructDiff was accepted by <strong>ACL</strong> 2026 (Main).</li>
-          <li><strong>2026.01:</strong> 🎉🎉 ASFT was accepted by <strong>ICLR</strong> 2026.</li>
-          <li><strong>2025.11:</strong> 🎉 Joined <img src="assets/logos/microsoft.png" alt="Microsoft" class="news-inline-logo" /> <strong>MSRA</strong> GenAI Group as a Research Intern.</li>
-          <li><strong>2025.10:</strong> 🎉 PlanGPT-VL was accepted by <strong>EMNLP</strong> Industry 2025.</li>
-          <li><strong>2025.08:</strong> 🎉🎉 PlanGPT was selected as the Oral paper of <strong>ACL</strong> Industry 2025 <span class="highlight-red">(Top 1%)</span>.</li>
-          <li><strong>2025.05:</strong> 🎉🎉 Three First-Author papers (FANNO, Tag-Instruct and PlanGPT) were accepted by <strong>ACL</strong> 2025.</li>
-          <li><strong>2025.04:</strong> 🎉 Joined <img src="assets/logos/pjlab.png" alt="Shanghai AI Lab" class="news-inline-logo" /> <strong>Shanghai AI Laboratory</strong> (OpenData Lab) as a Researcher.</li>
+          <li><strong>2026.06:</strong> I will serve as an <strong>Area Chair</strong> for <strong>EMNLP 2026</strong>.</li>
+          <li><strong>2026.04:</strong> InstructDiff was accepted by <strong>ACL 2026 Main</strong>.</li>
+          <li><strong>2026.01:</strong> ASFT was accepted by <strong>ICLR 2026</strong>.</li>
+          <li><strong>2025.11:</strong> Joined <strong>MSRA GenAI Group</strong> as a Research Intern.</li>
+          <li><strong>2025.10:</strong> PlanGPT-VL was accepted by <strong>EMNLP Industry 2025</strong>.</li>
+          <li><strong>2025.08:</strong> PlanGPT was selected as an <strong>ACL Industry 2025 Oral</strong> paper <span class="award">(Top 1%)</span>.</li>
+          <li><strong>2025.05:</strong> Three first-author papers, FANNO, Tag-Instruct, and PlanGPT, were accepted by <strong>ACL 2025</strong>.</li>
         </ul>
+      </section>
+
+      <section class="section-block" id="papers">
+        <h2>Publication &amp; Preprint</h2>
+        <p class="note">* denotes equal contribution. † denotes corresponding author.</p>
+
+        <h3>First Author / Corresponding Author</h3>
+
+        <article class="paper-row highlight" id="paper-upbench">
+          <div class="paper-media"><img src="assets/papers/upbench.jpg" alt="UPBench teaser" /></div>
+          <div class="paper-content">
+            <a href="https://arxiv.org/abs/2606.11678" target="_blank" rel="noreferrer"><span class="paper-title">Can AI Reason Like an Urban Planner? Benchmarking Large Language Models Against Professional Judgment</span></a>
+            <br />
+            Yijie Deng, <strong>He Zhu</strong>, Wen Wang, Junyou Su, Minxin Chen, Wenjia Zhang
+            <br /><br />
+            <em>arXiv</em>, 2026
+            <br />
+            <a href="https://arxiv.org/abs/2606.11678" target="_blank" rel="noreferrer">paper</a> /
+            <a href="https://arxiv.org/pdf/2606.11678" target="_blank" rel="noreferrer">pdf</a>
+            <p>UPBench evaluates whether LLMs can reason with professional planning judgment across planning knowledge and cognitive levels.</p>
+          </div>
+        </article>
+
+        <article class="paper-row highlight" id="paper-planbench-v">
+          <div class="paper-media"><img src="assets/papers/planbench-v.jpg" alt="PlanBench-V teaser" /></div>
+          <div class="paper-content">
+            <a href="https://arxiv.org/abs/2606.05744" target="_blank" rel="noreferrer"><span class="paper-title">PlanBench-V: A Spatial Planning Map Benchmark for Vision-Language Models</span></a>
+            <br />
+            Minxin Chen, <strong>He Zhu</strong>, Junyou Su, Wen Wang, Yijie Deng, Wenjia Zhang
+            <br /><br />
+            <em>arXiv</em>, 2026
+            <br />
+            <a href="https://arxiv.org/abs/2606.05744" target="_blank" rel="noreferrer">paper</a> /
+            <a href="https://arxiv.org/pdf/2606.05744" target="_blank" rel="noreferrer">pdf</a> /
+            <a href="https://plangpt.github.io/" target="_blank" rel="noreferrer">project page</a>
+            <p>A spatial planning map benchmark for evaluating VLM perception, reasoning, association, and implementation in planning contexts.</p>
+          </div>
+        </article>
+
+        <article class="paper-row highlight" id="paper-asft">
+          <div class="paper-media"><img src="assets/papers/asft.jpg" alt="ASFT teaser" /></div>
+          <div class="paper-content">
+            <a href="https://arxiv.org/abs/2509.23753" target="_blank" rel="noreferrer"><span class="paper-title">Anchored Supervised Fine-Tuning</span></a>
+            <br />
+            <strong>He Zhu*</strong>, Junyou Su*, Peng Lai*, Wenjia Zhang, Linyi Yang, Guanhua Chen†
+            <br /><br />
+            <em>ICLR</em>, 2026
+            <br />
+            <a href="https://arxiv.org/abs/2509.23753" target="_blank" rel="noreferrer">paper</a>
+            <p>Anchored SFT studies fine-tuning objectives that acquire new capabilities while preserving a model's original knowledge.</p>
+          </div>
+        </article>
+
+        <article class="paper-row highlight" id="paper-instructdiff">
+          <div class="paper-media"><img src="assets/papers/instructdiff.jpg" alt="InstructDiff teaser" /></div>
+          <div class="paper-content">
+            <a href="https://arxiv.org/abs/2601.23006" target="_blank" rel="noreferrer"><span class="paper-title">InstructDiff: Domain-Adaptive Data Selection via Differential Entropy for Efficient LLM Fine-Tuning</span></a>
+            <br />
+            Junyou Su*, <strong>He Zhu*†</strong>, Guanhua Chen†
+            <br /><br />
+            <em>ACL</em>, 2026 Main
+            <br />
+            <a href="https://arxiv.org/abs/2601.23006" target="_blank" rel="noreferrer">paper</a>
+            <p>A domain-adaptive data selection method for efficient LLM fine-tuning.</p>
+          </div>
+        </article>
+
+        <article class="paper-row highlight" id="paper-plangpt">
+          <div class="paper-media"><img src="assets/papers/plangpt.jpg" alt="PlanGPT teaser" /></div>
+          <div class="paper-content">
+            <a href="https://arxiv.org/abs/2402.19273" target="_blank" rel="noreferrer"><span class="paper-title">PlanGPT: Enhancing Urban Planning with a Tailored Language Model</span></a>
+            <br />
+            <strong>He Zhu</strong>, Guanhua Chen, Wenjia Zhang†
+            <br /><br />
+            <em>ACL Industry</em>, 2025 (<span class="award">Oral, Top 1%</span>)
+            <br />
+            <a href="https://arxiv.org/abs/2402.19273" target="_blank" rel="noreferrer">paper</a> /
+            <a href="https://plangpt.github.io/" target="_blank" rel="noreferrer">project page</a>
+            <p>The first systematic study of LLMs for urban planning, covering data, models, benchmarks, and applications.</p>
+          </div>
+        </article>
+
+        <article class="paper-row" id="paper-fanno">
+          <div class="paper-media"><img src="assets/papers/fanno.jpg" alt="FANNO teaser" /></div>
+          <div class="paper-content">
+            <a href="https://aclanthology.org/2025.findings-acl.906/" target="_blank" rel="noreferrer"><span class="paper-title">FANNO: Augmenting High-Quality Instruction Data with Open-Sourced LLMs Only</span></a>
+            <br />
+            <strong>He Zhu</strong>, Yifan Ding, Yicheng Tao, Zhiwen Ruan, Yixia Li, Wenjia Zhang, Yun Chen, Guanhua Chen†
+            <br /><br />
+            <em>ACL Findings</em>, 2025
+            <br />
+            <a href="https://aclanthology.org/2025.findings-acl.906/" target="_blank" rel="noreferrer">paper</a>
+          </div>
+        </article>
+
+        <article class="paper-row" id="paper-tag-instruct">
+          <div class="paper-media"><img src="assets/papers/tag-instruct.jpg" alt="Tag-Instruct teaser" /></div>
+          <div class="paper-content">
+            <a href="https://aclanthology.org/2025.findings-acl.911/" target="_blank" rel="noreferrer"><span class="paper-title">Tag-Instruct: Controlled Instruction Complexity Enhancement</span></a>
+            <br />
+            <strong>He Zhu</strong>, Zhiwen Ruan, Junyou Su, Xingwei He, Yun Chen, Wenjia Zhang, Guanhua Chen†
+            <br /><br />
+            <em>ACL Findings</em>, 2025
+            <br />
+            <a href="https://aclanthology.org/2025.findings-acl.911/" target="_blank" rel="noreferrer">paper</a>
+          </div>
+        </article>
+
+        <article class="paper-row highlight" id="paper-plangpt-vl">
+          <div class="paper-media"><img src="assets/papers/plangpt-vl.jpg" alt="PlanGPT-VL teaser" /></div>
+          <div class="paper-content">
+            <a href="https://arxiv.org/abs/2505.14481" target="_blank" rel="noreferrer"><span class="paper-title">PlanGPT-VL: Vision-Language Model for Urban Planning Maps</span></a>
+            <br />
+            <strong>He Zhu*</strong>, Junyou Su*, Minxin Chen*, Yun Chen, Guanhua Chen, Wenjia Zhang†
+            <br /><br />
+            <em>EMNLP Industry</em>, 2025
+            <br />
+            <a href="https://arxiv.org/abs/2505.14481" target="_blank" rel="noreferrer">paper</a> /
+            <a href="https://plangpt.github.io/" target="_blank" rel="noreferrer">project page</a>
+          </div>
+        </article>
+
+        <article class="paper-row" id="paper-sigspatial">
+          <div class="paper-media"><img src="assets/papers/sigspatial.jpg" alt="Trajectory prediction teaser" /></div>
+          <div class="paper-content">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3557915.3565536" target="_blank" rel="noreferrer"><span class="paper-title">Personalized Individual Trajectory Prediction via Meta-Learning</span></a>
+            <br />
+            <strong>He Zhu</strong>, Liyu Zhang, Zipei Fan
+            <br /><br />
+            <em>SIGSPATIAL</em>, 2022 (<span class="award">Oral</span>)
+            <br />
+            <a href="https://dl.acm.org/doi/abs/10.1145/3557915.3565536" target="_blank" rel="noreferrer">paper</a>
+          </div>
+        </article>
+
+        <article class="paper-row" id="paper-aligndiff">
+          <div class="paper-media"><img src="assets/papers/aligndiff.jpg" alt="AlignDiff teaser" /></div>
+          <div class="paper-content">
+            <a href="https://openreview.net/forum?id=4fclVIrUg2" target="_blank" rel="noreferrer"><span class="paper-title">AlignDiff: Exploiting Model-Intrinsic Information for Better Data Selection</span></a>
+            <br />
+            Peng Lai*, <strong>He Zhu*</strong>, Zhiwen Ruan, Dongdong Zhang, Yun Chen, Peng Li, Furu Wei, Yang Liu, Guanhua Chen†
+            <br /><br />
+            <em>Under Review</em>, 2026
+            <br />
+            <a href="https://openreview.net/forum?id=4fclVIrUg2" target="_blank" rel="noreferrer">paper</a>
+          </div>
+        </article>
+
+        <article class="paper-row" id="paper-router">
+          <div class="paper-media"><img src="assets/papers/router.jpg" alt="Router evaluation teaser" /></div>
+          <div class="paper-content">
+            <a href="https://arxiv.org/abs/2602.11877" target="_blank" rel="noreferrer"><span class="paper-title">Towards Fair and Comprehensive Evaluation of Routers in Collaborative LLM Systems</span></a>
+            <br />
+            Wanxing Wu*, <strong>He Zhu*</strong>, Yixia Li*, Yun Chen, Guanhua Chen†
+            <br /><br />
+            <em>Under Review</em>, 2026
+            <br />
+            <a href="https://arxiv.org/abs/2602.11877" target="_blank" rel="noreferrer">paper</a>
+          </div>
+        </article>
+
+        <h3 id="coauthor-papers">Selected Co-authored Papers</h3>
+
+        <article class="paper-row compact" id="paper-cft">
+          <div class="paper-media"><img src="assets/papers/cft.jpg" alt="CFT teaser" /></div>
+          <div class="paper-content">
+            <a href="https://arxiv.org/abs/2510.10974" target="_blank" rel="noreferrer"><span class="paper-title">Enhancing LLM Reasoning via Selective Critical Token Fine-Tuning</span></a>
+            <br />
+            <em>Under Review</em>, 2026
+            <br />
+            <a href="https://arxiv.org/abs/2510.10974" target="_blank" rel="noreferrer">paper</a>
+          </div>
+        </article>
+
+        <article class="paper-row compact" id="paper-dripper">
+          <div class="paper-media"><img src="assets/papers/dripper.jpg" alt="Dripper teaser" /></div>
+          <div class="paper-content">
+            <a href="https://arxiv.org/abs/2511.23119" target="_blank" rel="noreferrer"><span class="paper-title">Dripper: Token-Efficient Main HTML Extraction with a Lightweight LM</span></a>
+            <br />
+            <em>Under Review</em>, 2026
+            <br />
+            <a href="https://arxiv.org/abs/2511.23119" target="_blank" rel="noreferrer">paper</a>
+          </div>
+        </article>
+
+        <article class="paper-row compact" id="paper-topic-over-source">
+          <div class="paper-media"><img src="assets/papers/topic-over-source.jpg" alt="Topic Over Source teaser" /></div>
+          <div class="paper-content">
+            <a href="https://arxiv.org/abs/2502.16802" target="_blank" rel="noreferrer"><span class="paper-title">Topic Over Source: The Key to Effective Data Mixing for LLM Pre-training</span></a>
+            <br />
+            <em>Under Review</em>, 2026
+            <br />
+            <a href="https://arxiv.org/abs/2502.16802" target="_blank" rel="noreferrer">paper</a>
+          </div>
+        </article>
+
+        <p class="compact-list">
+          <strong>Other selected works:</strong>
+          LayAlign, NAACL Findings 2025 · ToolExpNet, ACL Findings 2025 · HHGNN, ICRA 2024
+        </p>
+      </section>
+
+      <section class="section-block" id="projects">
+        <h2>Projects</h2>
+        <article class="text-row">
+          <div class="logo-box">PG</div>
+          <div>
+            <strong>PlanGPT Series</strong> ·
+            <a href="https://plangpt.github.io/" target="_blank" rel="noreferrer">plangpt.github.io</a>
+            <br />
+            A suite for urban planning LLMs, including PlanGPT, PlanGPT-VL,
+            PlanGPT-R1, UP-Bench, and PlanBench-V.
+          </div>
+        </article>
+        <article class="text-row">
+          <div class="logo-box">UC</div>
+          <div>
+            <strong>UrbanClaw</strong> ·
+            <a href="https://app.urbanclaw.net/" target="_blank" rel="noreferrer">app.urbanclaw.net</a>
+            <br />
+            An AI-powered urban planning assistant with multi-agent
+            collaboration, tool use, and vision capabilities.
+          </div>
+        </article>
+      </section>
+
+      <section class="section-block" id="education">
+        <h2>Education</h2>
+        <article class="text-row">
+          <img class="org-logo" src="assets/logos/pku.png" alt="Peking University logo" />
+          <div>
+            <strong>Peking University</strong>, Beijing, China
+            <br />
+            M.Sc. in Smart City &amp; Data Sciences · 2024 to Present
+            <br />
+            Advisors: Prof. Wenjia Zhang and Prof. Guanhua Chen
+          </div>
+        </article>
+        <article class="text-row">
+          <img class="org-logo" src="assets/logos/sustech.png" alt="SUSTech logo" />
+          <div>
+            <strong>Southern University of Science and Technology</strong>, Shenzhen, China
+            <br />
+            B.E. in Computer Science · 2020 to 2024
+            <br />
+            Advisors: Prof. Zipei Fan and Prof. Xuan Song · GPA 90.2/100, top 10%
+          </div>
+        </article>
+      </section>
+
+      <section class="section-block" id="experience">
+        <h2>Experience</h2>
+        <article class="text-row">
+          <img class="org-logo wide" src="assets/logos/microsoft.png" alt="Microsoft logo" />
+          <div>
+            <strong>Microsoft Research Asia · GenAI Group</strong>, Beijing
+            <br />
+            Research Intern, supervised by Dr. Li Dong · Nov. 2025 to Present
+          </div>
+        </article>
+        <article class="text-row">
+          <img class="org-logo wide" src="assets/logos/pjlab.png" alt="Shanghai AI Lab logo" />
+          <div>
+            <strong>Shanghai AI Laboratory · OpenData Lab</strong>, Shanghai
+            <br />
+            Research Intern, foundation language models · May 2025 to Oct. 2025
+          </div>
+        </article>
+        <article class="text-row">
+          <img class="org-logo wide" src="assets/logos/sensetime.png" alt="SenseTime logo" />
+          <div>
+            <strong>SenseTime · Foundation Language Model Center</strong>, Shenzhen
+            <br />
+            Research Intern, foundation models · Jun. 2024 to Sep. 2024
+          </div>
+        </article>
+        <article class="text-row">
+          <img class="org-logo wide" src="assets/logos/locationmind.png" alt="LocationMind logo" />
+          <div>
+            <strong>LocationMind</strong>, Tokyo
+            <br />
+            Project Assistant, autonomous driving algorithms · Jun. 2023 to Dec. 2023
+          </div>
+        </article>
+      </section>
+
+      <section class="section-block" id="research-appointments">
+        <h2>Research Appointments</h2>
+        <article class="text-row">
+          <img class="org-logo" src="assets/logos/sustech.png" alt="SUSTech logo" />
+          <div>
+            <strong>SUSTech-NLP Group</strong>
+            <br />
+            Research Assistant, Prof. Guanhua Chen · Nov. 2023 to Present
+          </div>
+        </article>
+        <article class="text-row">
+          <img class="org-logo" src="assets/logos/utokyo.png" alt="University of Tokyo logo" />
+          <div>
+            <strong>Center for Spatial Information Science, UTokyo</strong>
+            <br />
+            Research Assistant · Feb. 2022 to May 2022; Jul. 2023 to Sep. 2023
+          </div>
+        </article>
+        <article class="text-row">
+          <img class="org-logo" src="assets/logos/nus.png" alt="NUS logo" />
+          <div>
+            <strong>School of Computing, NUS</strong>
+            <br />
+            Visiting Student · May 2022 to Jul. 2022
+          </div>
+        </article>
+      </section>
+
+      <section class="section-block" id="honors">
+        <h2>Honors &amp; Service</h2>
+        <div class="split-row">
+          <span>Outstanding Youth League Secretary, Peking University</span>
+          <span>2025</span>
+        </div>
+        <div class="split-row">
+          <span>Peking University Student Representative</span>
+          <span>2025</span>
+        </div>
+        <div class="split-row">
+          <span>Outstanding Graduate &amp; Outstanding Thesis, SUSTech CS <span class="award">(Top 5%)</span></span>
+          <span>2024</span>
+        </div>
+        <div class="split-row">
+          <span>Annual Outstanding Student, SUSTech</span>
+          <span>2021, 2022, 2023</span>
+        </div>
+        <div class="split-row">
+          <span><strong>Area Chair:</strong> EMNLP 2026</span>
+          <span>2026</span>
+        </div>
+        <div class="split-row">
+          <span><strong>Reviewer:</strong> ACL Rolling Review (ARR)</span>
+          <span>2024-2026</span>
         </div>
       </section>
 
-      <section id="education">
-        <h2>Education</h2>
-        <ul class="logo-list">
-          <li class="item-with-logo">
-            <img src="assets/logos/pku.png" alt="Peking University logo" />
-            <div>
-              <strong>Peking University</strong> — M.Sc. in Smart City &amp; Data Sciences, Advisors: Prof. Wenjia Zhang and Prof. Guanhua Chen (Sep 2024 – Present).
-            </div>
-          </li>
-          <li class="item-with-logo">
-            <img src="assets/logos/sustech.png" alt="SUSTech logo" />
-            <div>
-              <strong>Southern University of Science and Technology</strong> — B.E. in Computer Science, Advisors: Prof. Zipei Fan and Prof. Xuan Song (Sep 2020 – Jul 2024, GPA 90.2/100, top 10%).
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
+      <footer>
         <p>
-          I am the first author and technical lead of PlanGPT, the first
-          systematic study of LLMs for urban planning. The suite includes:
+          Layout inspired by the academic homepage style of
+          <a href="https://rchalyang.github.io/" target="_blank" rel="noreferrer">Ruihan Yang</a>
+          and the classic Jon Barron template.
         </p>
-        <p>
-          Learn more: <a href="https://plangpt.github.io/" target="_blank" rel="noreferrer">plangpt.github.io</a>
-        </p>
-        <ul>
-          <li>
-            <strong>PlanGPT</strong> — Text LLM for planning scheme generation,
-            powering Urban-Thinking, CoPlanner, and AuditPlanner.
-          </li>
-          <li>
-            <strong>PlanGPT-VL</strong> — Vision-language model for planning
-            maps with hallucination control and hybrid training. Outperforms
-            larger general VLMs on PlanBench-V.
-          </li>
-          <li>
-            <strong>PlanGPT-R1</strong> — Reasoning-enhanced model for long-form
-            planning documents.
-          </li>
-          <li>
-            <strong>UP-Bench &amp; PlanBench-V</strong> — Benchmarks covering
-            text, vision, and multimodal planning tasks.
-          </li>
-          <li>
-            <strong>UrbanClaw</strong> — AI-powered urban planning assistant with multi-agent collaboration, tool-use, and vision capabilities.
-            <a href="https://app.urbanclaw.net/" target="_blank" rel="noreferrer">app.urbanclaw.net</a>
-          </li>
-        </ul>
-      </section>
-
-      <section id="papers">
-        <h2>First-Author Papers</h2>
-        <ul class="paper-list compact">
-          <li id="paper-asft">
-            <div class="paper-line">
-              <strong>Anchored Supervised Fine-Tuning</strong>
-              <span class="paper-venue">ICLR 2026</span>
-            </div>
-            <div class="paper-line secondary">
-              <span class="paper-authors small"><strong>HE ZHU*</strong>, Junyou Su*, Peng Lai*, Wenjia Zhang, Linyi Yang, Guanhua Chen<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
-              <span class="paper-links inline">
-                <a href="https://arxiv.org/abs/2509.23753"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-          <li id="paper-instructdiff">
-            <div class="paper-line">
-              <strong>InstructDiff: Domain-Adaptive Data Selection via Differential Entropy for Efficient LLM Fine-Tuning</strong>
-              <span class="paper-venue">ACL 2026 (Main)</span>
-            </div>
-            <div class="paper-line secondary">
-              <span class="paper-authors small">Junyou Su*, <strong>HE ZHU*<span class="corresponding" title="Corresponding author" aria-label="Corresponding author">&#9993;</span></strong>, Guanhua Chen<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
-              <span class="paper-links inline">
-                <a href="https://arxiv.org/abs/2601.23006"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-          <li id="paper-plangpt">
-            <div class="paper-line">
-              <strong>PlanGPT: Enhancing Urban Planning with Tailored Language Model</strong>
-              <span class="paper-venue">ACL Industry 2025 · <span class="oral-tag">Oral</span></span>
-            </div>
-            <div class="paper-line secondary">
-              <span class="paper-authors small"><strong>HE ZHU</strong>, Guanhua Chen, Wenjia Zhang<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
-              <span class="paper-links inline">
-                <a href="https://arxiv.org/abs/2402.19273"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-          <li id="paper-fanno">
-            <div class="paper-line">
-              <strong>Augmenting High-Quality Instruction Data with Open-Sourced LLMs Only</strong>
-              <span class="paper-venue">ACL 2025 (Findings)</span>
-            </div>
-            <div class="paper-line secondary">
-              <span class="paper-authors small"><strong>HE ZHU</strong>, Yifan Ding, Yicheng Tao, Zhiwen Ruan, Yixia Li, Wenjia Zhang, Yun Chen, Guanhua Chen<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
-              <span class="paper-links inline">
-                <a href="https://aclanthology.org/2025.findings-acl.906/"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-          <li id="paper-tag-instruct">
-            <div class="paper-line">
-              <strong>Tag-Instruct: Controlled Instruction Complexity Enhancement</strong>
-              <span class="paper-venue">ACL 2025 (Findings)</span>
-            </div>
-            <div class="paper-line secondary">
-              <span class="paper-authors small"><strong>HE ZHU</strong>, Zhiwen Ruan, Junyou Su, Xingwei He, Yun Chen, Wenjia Zhang, Guanhua Chen<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
-              <span class="paper-links inline">
-                <a href="https://aclanthology.org/2025.findings-acl.911/"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-          <li id="paper-plangpt-vl">
-            <div class="paper-line">
-              <strong>PlanGPT-VL: Vision-Language Model for Urban Planning Maps</strong>
-              <span class="paper-venue">EMNLP Industry 2025</span>
-            </div>
-            <div class="paper-line secondary">
-              <span class="paper-authors small"><strong>HE ZHU*</strong>, Junyou Su*, Minxin Chen*, Yun Chen, Guanhua Chen, Wenjia Zhang<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
-              <span class="paper-links inline">
-                <a href="https://arxiv.org/abs/2505.14481"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-          <li id="paper-sigspatial">
-            <div class="paper-line">
-              <strong>Personalized Individual Trajectory Prediction via Meta-Learning</strong>
-              <span class="paper-venue">SIGSPATIAL 2022 · <span class="oral-tag">Oral</span></span>
-            </div>
-            <div class="paper-line secondary">
-              <span class="paper-authors small"><strong>HE ZHU</strong>, Liyu Zhang, Zipei Fan</span>
-              <span class="paper-links inline">
-                <a href="https://dl.acm.org/doi/abs/10.1145/3557915.3565536"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-          <li>
-            <div class="paper-line">
-              <strong>Towards Fair and Comprehensive Evaluation of Routers in Collaborative LLM Systems</strong>
-              <span class="paper-venue upcoming">Under Review, 2026</span>
-            </div>
-            <div class="paper-line secondary">
-              <span class="paper-authors small">Wanxing Wu*, <strong>HE ZHU*</strong>, Yixia Li*, Yun Chen, Guanhua Chen<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
-              <span class="paper-links inline">
-                <a href="https://arxiv.org/abs/2602.11877"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-          <li id="paper-aligndiff">
-            <div class="paper-line">
-              <strong>AlignDiff: Exploiting Model-Intrinsic Information for Better Data Selection</strong>
-              <span class="paper-venue upcoming">Under Review, 2026</span>
-            </div>
-            <div class="paper-line secondary">
-              <span class="paper-authors small">Peng Lai*, <strong>HE ZHU*</strong>, Zhiwen Ruan, Dongdong Zhang, Yun Chen, Peng Li, Furu Wei, Yang Liu, Guanhua Chen<span class="mail-icon" title="Email" aria-label="Email">&#9993;</span></span>
-              <span class="paper-links inline">
-                <a href="https://openreview.net/forum?id=4fclVIrUg2"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section id="coauthor-papers">
-        <h2>Selected Co-authored Papers</h2>
-        <ul class="paper-list compact">
-          <li id="paper-cft">
-            <div class="paper-line">
-              <strong>Enhancing LLM Reasoning via Selective Critical Token Fine-Tuning</strong>
-              <span class="paper-venue upcoming">Under Review, 2026</span>
-              <span class="paper-links inline">
-                <a href="https://arxiv.org/abs/2510.10974"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-          <li id="paper-dripper">
-            <div class="paper-line">
-              <strong>Dripper: Token-Efficient Main HTML Extraction with a Lightweight LM</strong>
-              <span class="paper-venue upcoming">Under Review, 2026</span>
-              <span class="paper-links inline">
-                <a href="https://arxiv.org/abs/2511.23119"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-          <li id="paper-topic-over-source">
-            <div class="paper-line">
-              <strong>Topic Over Source: The Key to Effective Data Mixing for LLM Pre-training</strong>
-              <span class="paper-venue upcoming">Under Review, 2026</span>
-              <span class="paper-links inline">
-                <a href="https://arxiv.org/abs/2502.16802"><img src="assets/logos/arxiv.svg" alt="Paper" class="paper-link-icon" /></a>
-              </span>
-            </div>
-          </li>
-          <li>
-            <div class="paper-line">
-              <strong>LayAlign: Enhancing Multilingual Reasoning via Layer-wise Adaptive Fusion</strong>
-              <span class="paper-venue">NAACL 2025 (Findings)</span>
-            </div>
-          </li>
-          <li>
-            <div class="paper-line">
-              <strong>ToolExpNet: Optimizing Multi-Tool Selection in LLMs with Experience Networks</strong>
-              <span class="paper-venue">ACL 2025 (Findings)</span>
-            </div>
-          </li>
-          <li>
-            <div class="paper-line">
-              <strong>HHGNN: Heterogeneous Hypergraph Neural Network for Trajectory Prediction</strong>
-              <span class="paper-venue">ICRA 2024</span>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section id="experience">
-        <h2>Experience</h2>
-        <ul class="logo-list">
-          <li class="item-with-logo">
-            <img src="assets/logos/microsoft.png" alt="Microsoft logo" />
-            <div>
-              <strong>Microsoft Research Asia · GenAI Group</strong> — Research Intern, supervised by Dr. Li Dong (Nov 2025 – Present).
-            </div>
-          </li>
-          <li class="item-with-logo">
-            <img src="assets/logos/pjlab.png" alt="Shanghai AI Lab logo" />
-            <div>
-              <strong>Shanghai AI Laboratory · OpenData Lab</strong> — Research Intern, foundation language models (May 2025 – Oct 2025).
-            </div>
-          </li>
-          <li class="item-with-logo">
-            <img src="assets/logos/sensetime.png" alt="SenseTime logo" />
-            <div>
-              <strong>SenseTime · Foundation Language Model Center</strong> — Research Intern, foundation models (Jun 2024 – Sep 2024).
-            </div>
-          </li>
-          <li class="item-with-logo">
-            <img src="assets/logos/locationmind.png" alt="LocationMind logo" />
-            <div>
-              <strong>LocationMind, Tokyo</strong> — Project Assistant, autonomous driving algorithms (Jun 2023 – Dec 2023).
-            </div>
-          </li>
-        </ul>
-
-      </section>
-
-      <section id="research-appointments">
-        <h2>Research Appointments</h2>
-        <ul class="logo-list">
-          <li class="item-with-logo">
-            <img src="assets/logos/sustech.png" alt="SUSTech logo" />
-            <div>
-              <strong>SUSTech-NLP Group</strong> — Research Assistant, Prof. Guanhua Chen (Nov 2023 – Present).
-            </div>
-          </li>
-          <li class="item-with-logo">
-            <img src="assets/logos/utokyo.png" alt="University of Tokyo logo" />
-            <div>
-              <strong>Center for Spatial Information Science, UTokyo</strong> — Research Assistant (Feb 2022 – May 2022; Jul 2023 – Sep 2023).
-            </div>
-          </li>
-          <li class="item-with-logo">
-            <img src="assets/logos/nus.png" alt="NUS logo" />
-            <div>
-              <strong>School of Computing, NUS</strong> — Visiting Student (May 2022 – Jul 2022).
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section id="honors">
-        <h2>Honors &amp; Service</h2>
-        <ul class="honors-inline-list">
-          <li>Outstanding Youth League Secretary, Peking University — led the branch to Five-Star recognition (2025)</li>
-          <li>Peking University Student Representative (2025)</li>
-          <li>Outstanding Graduate &amp; Outstanding Thesis, Dept. of CS, SUSTech (Top 5%, 2024)</li>
-          <li>Annual Outstanding Student, SUSTech (2021, 2022, 2023)</li>
-          <li>Area Chair: EMNLP 2026</li>
-          <li>Reviewer: ARR (ACL Rolling Review, 2024–2026)</li>
-        </ul>
-      </section>
-    </div>
+      </footer>
+    </main>
   </body>
 </html>
