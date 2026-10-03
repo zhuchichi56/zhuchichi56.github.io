@@ -104,3 +104,24 @@ span.highlight {
   color: #555;
   font-size: 13px;
 }
+
+.publication-table {
+  table-layout: fixed;
+}
+
+.publication-figure {
+  width: 30%;
+  vertical-align: middle;
+}
+
+.publication-figure img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.publication-details {
+  width: 70%;
+  vertical-align: middle;
+}

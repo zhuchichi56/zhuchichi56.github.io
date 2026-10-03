@@ -1,5 +1,41 @@
 # Development Log
 
+## 2026-10-04 — Hide Top 1% and align publication entries
+
+### Question
+
+Hide Top 1% claims and align LongCat-DeepResearch with the publication entries below.
+
+### Analysis / Root Cause
+
+Top 1% appeared in both PlanGPT's news and publication entry. Publication tables
+used automatic column sizing with nominal 25% figure columns and 200px images;
+LongCat additionally constrained its figure with max-width:100%, unlike the other
+papers. The independent sizing rules could shift the text-column starting point.
+
+### Solution
+
+Remove both Top 1% mentions while retaining Oral. Give all nine illustrated papers
+the same fixed 30%/70% columns, shared responsive image sizing capped at 200px,
+and explicit table rows. Keep the default 20px cell padding consistent.
+
+### Files Changed
+
+- `index.html`
+- `assets/style.css`
+- `docs/dev.md`
+
+### Verification
+
+`git diff --check` passed. HTML inspection confirmed nine shared publication
+tables/figure/details columns, all local assets exist, and both Top 1% mentions
+are absent while Oral remains. Live content/CSS checks follow deployment.
+Full-page browser visual inspection is unavailable in this environment.
+
+### Commit Hash
+
+Pending content commit; recorded in the follow-up log commit.
+
 ## 2026-10-04 — Put current role before research directions
 
 ### Question
