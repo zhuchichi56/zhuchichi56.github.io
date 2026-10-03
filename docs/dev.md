@@ -1,5 +1,36 @@
 # Development Log
 
+## 2026-10-04 — Put current role before research directions
+
+### Question
+
+Place the current Meituan role, previous Li Dong mentorship, and EMNLP Area Chair
+paragraph above the three research directions.
+
+### Analysis / Root Cause
+
+The paragraph followed the research list. The user requested the reverse order.
+
+### Solution
+
+Move the paragraph intact to immediately precede the research introduction.
+The biography now presents academic background, current role and mentorship,
+then the three directions.
+
+### Files Changed
+
+- `index.html`
+- `docs/dev.md`
+
+### Verification
+
+Verified the role paragraph occurs once and precedes the research introduction.
+`git diff --check` and live-site verification accompany publication.
+
+### Commit Hash
+
+`6d6e280` — Move current role above research directions.
+
 ## 2026-10-04 — SUSTech name and homepage presentation refinements
 
 ### Question
