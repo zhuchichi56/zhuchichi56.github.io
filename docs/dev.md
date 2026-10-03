@@ -1,5 +1,49 @@
 # Development Log
 
+## 2026-10-04 — Recover layout from mixed HTML/CSS versions
+
+### Question
+
+The user reports the personal homepage layout is broken after the publication
+alignment update. Repair it while preserving the requested content.
+
+### Analysis / Root Cause
+
+The previous alignment change removed width=200 from all nine paper images and
+moved their constraints into newly added CSS rules. GitHub Pages serves CSS with
+Cache-Control: max-age=600 and the stylesheet URL had not changed. New HTML paired
+with the previously cached stylesheet has no matching sizing rules: the LongCat
+image is intrinsically 1584x1014 and the other checked paper images are 700px wide.
+That mixed-version failure mode can expand the nested tables and break the page.
+Prior verification checked deployed HTML/CSS separately, missing this scenario.
+
+### Solution
+
+Version the stylesheet URL to force retrieval of the matching CSS. Restore
+width=200 and inline responsive width constraints on every paper figure. Keep
+critical publication and experience columns/table sizing inline as well as in CSS,
+and give all three employer logos inline bounds. Thus cached or missing CSS cannot
+remove the layout's essential image/column constraints. Retain all biography,
+Top Talent, SUSTech, author order, and hidden Top 1% changes.
+
+### Files Changed
+
+- `index.html`
+- `docs/dev.md`
+
+### Verification
+
+`git diff --check` passed. All nine paper images have a 200px fallback and inline
+responsive bounds; all three employer logos have inline bounds; all 24 affected
+cells retain widths without CSS. The versioned stylesheet, local references, and
+requested content/order were verified. Live checks follow deployment.
+Native browser capture returned a blank surface, so it is not treated as visual
+proof of the layout. The former browser tab also contained an older cached page.
+
+### Commit Hash
+
+`604fb05` — Restore image bounds and invalidate cached homepage CSS.
+
 ## 2026-10-04 — Hide Top 1% and align publication entries
 
 ### Question
