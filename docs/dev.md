@@ -1,5 +1,50 @@
 # Development Log
 
+## 2026-10-04 — SUSTech name and homepage presentation refinements
+
+### Question
+
+Use SUSTech for the university name and finish the biography and experience
+presentation refinements: Top Talent emphasis, simpler opening, and LongCat logo.
+
+### Analysis / Root Cause
+
+The user confirmed the preferred public school name is SUSTech. The opening
+unnecessarily repeated degree majors; the research paragraph was dense and
+the current Meituan entry lacked the logo column used by the other employers.
+
+### Solution
+
+Use SUSTech throughout the homepage and omit major names from the opening only.
+Retain education details in the Education section and leave CV files untouched.
+Highlight Researcher (Top Talent Program) in the biography and Meituan experience.
+Present the three research directions as a compact list. Give Meituan, MSRA, and
+Shanghai AI Laboratory the same logo/text columns and spacing. Retain Li Dong's
+mentorship. Crop the green cat mark from the official LongCat repository logo.
+Publish through a feature-branch pull request under the user's existing approval.
+
+Logo source:
+<https://github.com/meituan-longcat/LongCat-DeepResearch/blob/main/assets/longcat_logo.png>
+
+### Files Changed
+
+- `index.html`
+- `assets/style.css`
+- `assets/logos/longcat.png`
+- `docs/dev.md`
+
+### Verification
+
+`git diff --check` passed. All 17 local asset/link references exist. HTML checks
+confirmed three matching logo/text experience rows, two Top Talent mentions,
+SUSTech naming, major-free opening, and retained mentorship and arXiv links.
+The cropped logo was visually inspected. No connected browser was available for
+a full-page visual preview; live content/assets will be checked after deployment.
+
+### Commit Hash
+
+Pending content commit; recorded in the follow-up log commit.
+
 ## 2026-10-04 — Review biography and experience presentation
 
 ### Question
