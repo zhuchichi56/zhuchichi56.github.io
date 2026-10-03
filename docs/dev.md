@@ -1,5 +1,46 @@
 # Development Log
 
+## 2026-10-04 — Research directions, current role, and arXiv link
+
+### Question
+
+Update the homepage research directions and current Meituan role, retain Li Dong's
+mentorship, add the formal arXiv link, and publish the approved pull request.
+
+### Analysis / Root Cause
+
+The user clarified that the three research directions are data synthesis,
+continual learning, and agent harnesses. UrbanClaw, systems around PlanGPT and
+PlanGPT-VL, and LongCat-DeepResearch belong in the agent-harness discussion.
+The current role is Researcher at Meituan LongCat; the former MSRA role must not
+still be labeled current. No unconfirmed employment end/start month is invented.
+The user emphasized Li Dong's mentorship and requested homepage edits only.
+The official project page and arXiv API confirm report ID `2609.36071`.
+
+### Solution
+
+Rewrite the research biography around the three directions. Add the current
+Meituan Researcher role, retain the previous MSRA internship, and write:
+"Before that, I was very fortunate to be mentored by Dr. Li Dong...".
+Use formal arXiv abstract/PDF links. CV files remain untouched.
+The user approved merging and publishing PR #1.
+
+### Files Changed
+
+- `index.html`
+- `docs/dev.md`
+
+### Verification
+
+`git diff --check` passed. All 16 local asset/link references exist. Content checks
+confirmed the three directions, current Meituan role, Li Dong mentorship, and
+co-first-author order. The formal arXiv abstract and PDF links returned HTTP 200.
+Deployment verification follows the approved merge.
+
+### Commit Hash
+
+Pending commit; recorded by the subsequent deployment log entry.
+
 ## 2026-10-04 — LongCat-DeepResearch homepage update
 
 ### Question
