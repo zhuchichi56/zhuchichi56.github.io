@@ -34,7 +34,7 @@ Full-page browser visual inspection is unavailable in this environment.
 
 ### Commit Hash
 
-Pending content commit; recorded in the follow-up log commit.
+`612d861` — Align publication entries and hide Top 1% claims.
 
 ## 2026-10-04 — Put current role before research directions
 
