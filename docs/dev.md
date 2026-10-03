@@ -43,7 +43,9 @@ a full-page visual preview; live content/assets will be checked after deployment
 
 ### Commit Hash
 
-Pending content commit; recorded in the follow-up log commit.
+`e0c9935` — Refine homepage biography and align experience entries.
+Publication uses `feat/homepage-layout-20261004` and an approved pull-request merge;
+no commit/ref is pushed directly to `master`.
 
 ## 2026-10-04 — Review biography and experience presentation
 
