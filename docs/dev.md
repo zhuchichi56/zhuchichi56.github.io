@@ -39,7 +39,9 @@ Deployment verification follows the approved merge.
 
 ### Commit Hash
 
-Pending commit; recorded by the subsequent deployment log entry.
+`e0adb2b` — Refresh research focus and Meituan role with arXiv links.
+Published through the user-approved PR #1; final live-site checks are performed
+after GitHub Pages finishes building the merge.
 
 ## 2026-10-04 — LongCat-DeepResearch homepage update
 
