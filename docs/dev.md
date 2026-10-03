@@ -1,5 +1,39 @@
 # Development Log
 
+## 2026-10-04 — Replace SIGSPATIAL 2022 publication figure
+
+### Question
+
+Use the user-provided image for Personalized Individual Trajectory Prediction
+via Meta-Learning, not for the LongCat publication.
+
+### Analysis / Root Cause
+
+The attachment depicts the paper's support/query meta-learning framework.
+The user explicitly identified the corresponding SIGSPATIAL 2022 entry.
+
+### Solution
+
+Add the supplied PNG under a new asset filename and update only that publication
+image reference, retaining the existing inline responsive bounds and paper details.
+The new filename avoids reusing the cached older figure.
+
+### Files Changed
+
+- `index.html`
+- `assets/papers/sigspatial-meta-learning.png`
+- `docs/dev.md`
+
+### Verification
+
+git diff --check passed. The replacement is a valid PNG and referenced once;
+publication title, author list, venue, links, inline sizing, and the LongCat
+image reference are preserved. Live asset verification follows deployment.
+
+### Commit Hash
+
+Pending.
+
 ## 2026-10-04 — Align education and simplify report news
 
 ### Question
