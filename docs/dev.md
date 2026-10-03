@@ -1,5 +1,82 @@
 # Development Log
 
+## 2026-10-04 — SUSTech name and homepage presentation refinements
+
+### Question
+
+Use SUSTech for the university name and finish the biography and experience
+presentation refinements: Top Talent emphasis, simpler opening, and LongCat logo.
+
+### Analysis / Root Cause
+
+The user confirmed the preferred public school name is SUSTech. The opening
+unnecessarily repeated degree majors; the research paragraph was dense and
+the current Meituan entry lacked the logo column used by the other employers.
+
+### Solution
+
+Use SUSTech throughout the homepage and omit major names from the opening only.
+Retain education details in the Education section and leave CV files untouched.
+Highlight Researcher (Top Talent Program) in the biography and Meituan experience.
+Present the three research directions as a compact list. Give Meituan, MSRA, and
+Shanghai AI Laboratory the same logo/text columns and spacing. Retain Li Dong's
+mentorship. Crop the green cat mark from the official LongCat repository logo.
+Publish through a feature-branch pull request under the user's existing approval.
+
+Logo source:
+<https://github.com/meituan-longcat/LongCat-DeepResearch/blob/main/assets/longcat_logo.png>
+
+### Files Changed
+
+- `index.html`
+- `assets/style.css`
+- `assets/logos/longcat.png`
+- `docs/dev.md`
+
+### Verification
+
+`git diff --check` passed. All 17 local asset/link references exist. HTML checks
+confirmed three matching logo/text experience rows, two Top Talent mentions,
+SUSTech naming, major-free opening, and retained mentorship and arXiv links.
+The cropped logo was visually inspected. No connected browser was available for
+a full-page visual preview; live content/assets will be checked after deployment.
+
+### Commit Hash
+
+`e0c9935` — Refine homepage biography and align experience entries.
+Publication uses `feat/homepage-layout-20261004` and an approved pull-request merge;
+no commit/ref is pushed directly to `master`.
+
+## 2026-10-04 — Review biography and experience presentation
+
+### Question
+
+Review how to highlight the Top Talent program, simplify the opening academic
+introduction, and align the current LongCat experience with the other entries.
+
+### Analysis / Root Cause
+
+The current biography omits Top Talent and includes both major names. Its research
+paragraph contains many inline project links. The Meituan experience occupies a
+full-width text row, whereas MSRA and Shanghai AI Laboratory use logo/text columns.
+The public LongCat repository supplies a wide logo with a separable green cat mark.
+
+### Solution
+
+Propose Researcher (Top Talent Program) in the biography and experience section;
+use M.Sc. at Peking University and B.E. at Southern University of Science and
+Technology in the opening; retain the three research directions and Li Dong's
+mentorship; use the official cat mark and consistent experience columns.
+This turn is a review request, so no website changes or deployment were performed.
+
+### Files Changed
+
+- `docs/dev.md` (review record only)
+
+### Commit Hash
+
+The review record's commit is available via `git log -1 -- docs/dev.md`.
+
 ## 2026-10-04 — Research directions, current role, and arXiv link
 
 ### Question
