@@ -29,7 +29,7 @@ Verified the role paragraph occurs once and precedes the research introduction.
 
 ### Commit Hash
 
-Pending content commit; recorded in the subsequent log commit.
+`6d6e280` — Move current role above research directions.
 
 ## 2026-10-04 — SUSTech name and homepage presentation refinements
 
