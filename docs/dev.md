@@ -52,4 +52,6 @@ and the native Safari connection timed out.
 
 ### Commit Hash
 
-Pending commit. The final content commit is recorded in the follow-up log commit.
+`aee0afa` — Add LongCat-DeepResearch co-first-author publication.
+Prepared on `feat/homepage-longcat-deepresearch-20261004` for pull-request review;
+the live Pages source remains `master` until the pull request is approved and merged.
