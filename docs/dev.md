@@ -35,7 +35,7 @@ was unavailable, so this is structural verification rather than visual proof.
 
 ### Commit Hash
 
-Pending.
+`94c287a` — Align education with experience and simplify report news.
 
 ## 2026-10-04 — Recover layout from mixed HTML/CSS versions
 
