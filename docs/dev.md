@@ -32,7 +32,7 @@ image reference are preserved. Live asset verification follows deployment.
 
 ### Commit Hash
 
-Pending.
+`588b167` — Replace SIGSPATIAL meta-learning publication figure.
 
 ## 2026-10-04 — Align education and simplify report news
 
