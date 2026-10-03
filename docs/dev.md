@@ -1,5 +1,35 @@
 # Development Log
 
+## 2026-10-04 — Review biography and experience presentation
+
+### Question
+
+Review how to highlight the Top Talent program, simplify the opening academic
+introduction, and align the current LongCat experience with the other entries.
+
+### Analysis / Root Cause
+
+The current biography omits Top Talent and includes both major names. Its research
+paragraph contains many inline project links. The Meituan experience occupies a
+full-width text row, whereas MSRA and Shanghai AI Laboratory use logo/text columns.
+The public LongCat repository supplies a wide logo with a separable green cat mark.
+
+### Solution
+
+Propose Researcher (Top Talent Program) in the biography and experience section;
+use M.Sc. at Peking University and B.E. at Southern University of Science and
+Technology in the opening; retain the three research directions and Li Dong's
+mentorship; use the official cat mark and consistent experience columns.
+This turn is a review request, so no website changes or deployment were performed.
+
+### Files Changed
+
+- `docs/dev.md` (review record only)
+
+### Commit Hash
+
+The review record's commit is available via `git log -1 -- docs/dev.md`.
+
 ## 2026-10-04 — Research directions, current role, and arXiv link
 
 ### Question
