@@ -42,7 +42,7 @@ proof of the layout. The former browser tab also contained an older cached page.
 
 ### Commit Hash
 
-Pending recovery commit; recorded in the follow-up log commit.
+`604fb05` — Restore image bounds and invalidate cached homepage CSS.
 
 ## 2026-10-04 — Hide Top 1% and align publication entries
 
