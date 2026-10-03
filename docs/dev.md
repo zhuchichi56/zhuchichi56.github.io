@@ -1,5 +1,42 @@
 # Development Log
 
+## 2026-10-04 — Align education and simplify report news
+
+### Question
+
+Align Education and Experience logos/text, and announce the LongCat technical
+report without the co-first-author phrase. The user withdrew the SenseTime
+Research Institute rename; preserve Foundation Language Model Center.
+
+### Analysis / Root Cause
+
+Education used independent automatic tables with 15%/85% columns, whereas
+Experience used fixed 25%/75% columns. Their logo centers and text starts differed.
+
+### Solution
+
+Reuse the existing fixed experience table layout for both education entries,
+including explicit rows and inline column/image bounds. Simplify only the News
+announcement; preserve publication author order and equal-contribution markers.
+Leave the SenseTime department unchanged.
+
+### Files Changed
+
+- `index.html`
+- `docs/dev.md`
+
+### Verification
+
+git diff --check and HTMLParser checks passed: five institution tables share
+fixed 25%/75% columns, all local assets exist, and all nine paper images retain
+inline bounds. SenseTime wording and publication author markers are unchanged.
+Live content verification follows Pages deployment. Browser screenshot capture
+was unavailable, so this is structural verification rather than visual proof.
+
+### Commit Hash
+
+`94c287a` — Align education with experience and simplify report news.
+
 ## 2026-10-04 — Recover layout from mixed HTML/CSS versions
 
 ### Question
