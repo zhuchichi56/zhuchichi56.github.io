@@ -1,3 +1,25 @@
+# CV synchronization - 2026-10-08
+
+## Question
+Update the public English CV to match the academic homepage before JD TGT applications.
+
+## Analysis / Root Cause
+The published CV lagged behind index.html in current role, research framing, publications, projects, education and service. The original checkout contains pre-existing CV edits and remains untouched. Work starts from origin/master in an isolated feature branch.
+
+## Solution
+Synchronize the English LaTeX CV with homepage facts: LongCat Researcher / Top Talent Program, previous MSRA mentorship, three research directions, LongCat-DeepResearch co-first report, PlanBench preprints, KDD status, project deployments, Berkeley visit and service. Use homepage employment wording rather than inventing dates. Preserve the Chinese CV for a separate request.
+
+## Files Changed
+cv.tex, cv.pdf, docs/dev.md.
+
+## Verification
+Tectonic compilation passed without warnings. All two pages were rendered and visually checked. Expected graduation was updated to June 2027 based on user confirmation.
+
+## Commit Hash
+See the commit containing this entry.
+
+---
+
 # Development Log
 
 ## 2026-10-04 — Replace SIGSPATIAL 2022 publication figure
