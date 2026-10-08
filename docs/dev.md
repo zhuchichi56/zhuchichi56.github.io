@@ -1,3 +1,25 @@
+## 2026-10-09 — Refresh Chinese CV
+
+### Question
+Update the outdated Chinese PDF and remove the internship-offer paragraph; retain Chinese source/PDF in the repository without adding a homepage entry.
+
+### Analysis / Root Cause
+The Chinese CV still described MSRA as the current role, omitted LongCat and recent papers, and included historical offer claims.
+
+### Solution
+Use the user-confirmed June 2026 Meituan and October 2025 MSRA starts, Chinese department labels with English names, default Gmail, September 2024 enrollment and June 2027 graduation. Synchronize publications with the updated English CV, retaining equal-contribution marks, links and actual publication status. Remove offer claims and stale publication counts. Keep the existing academic honors.
+
+### Files Changed
+- cv_cn.tex
+- cv_cn.pdf
+- docs/dev.md
+
+### Verification
+Tectonic compiled without warnings; PDF has two A4 pages, both visually reviewed. No homepage or English CV changes. Native editor compile was requested; repository assets require the project compiler for PDF export.
+
+### Commit Hash
+See the commit titled `Update Chinese CV and remove historical offer claims` in this branch.
+
 # CV synchronization - 2026-10-08
 
 ## Question
