@@ -1,4 +1,5 @@
 _site/
+dist/
 
 # LaTeX build artifacts
 *.aux
@@ -10,4 +11,3 @@ _site/
 *.toc
 *.bbl
 *.blg
-

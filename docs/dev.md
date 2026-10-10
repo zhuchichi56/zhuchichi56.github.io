@@ -1,3 +1,50 @@
+## 2026-10-10 — Prepare hezhu.me migration for mainland visitors
+
+### Question
+
+Migrate the existing academic homepage to `hezhu.me` with better access from
+mainland China, and help register the domain.
+
+### Analysis / Root Cause
+
+GitHub Pages currently serves `master`. The reference `liyixia.me` also resolves
+to GitHub Pages, so merely changing the domain does not change its host.
+The existing stylesheet additionally imports Google Fonts. The local original
+checkout has unpublished CV changes and is behind the deployed revision.
+Use an isolated worktree based on `84fbac3` to preserve those user edits.
+
+Namecheap lists `hezhu.me` as available. A one-year cart subtotal was CNY 73.48,
+charged in USD; actual checkout and renewal terms require reconfirmation.
+No registrar or cloud-host account is authenticated for this migration.
+
+### Solution
+
+Self-host all four existing Lato styles with their OFL license. Prepare a
+public-assets archive and an optional Caddy/Docker deployment with automatic
+HTTPS. Document host choices, DNS, acceptance checks, and rollback. Domain
+purchase, hosting activation, DNS changes, and cutover remain pending user
+account/purchase details. Mainland accessibility has not yet been verified.
+
+### Files Changed
+
+- `assets/style.css`, `assets/fonts/`
+- `deploy/package.sh`, `deploy/Caddyfile`, `deploy/Dockerfile`, `deploy/compose.yaml`
+- `.gitignore`, `.dockerignore`, `README.md`
+- `docs/hosting-migration.md`, `docs/dev.md`
+
+### Verification
+
+Shell syntax, public-only archive contents, and all 17 local HTML references
+passed verification. Browser inspection confirmed all 15 images and local fonts
+load and the desktop layout is preserved. `git diff --check` passed. Docker
+Compose validation was unavailable because the local Docker CLI lacks the
+Compose plugin; server HTTPS and mainland network checks remain pending.
+
+### Commit Hash
+
+The preparation commit is identifiable with
+`git log -1 --format=%H --grep='Prepare hezhu.me hosting migration'`.
+
 ## 2026-10-09 — Refresh Chinese CV
 
 ### Question

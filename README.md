@@ -35,6 +35,14 @@ Prepare changes on a `feat/*` or `wip/*` branch and open a pull request.
 After the approved pull request is merged, GitHub Pages publishes the updated files.
 Never push directly to `master` from this workspace.
 
+## Custom-domain migration
+
+The Hong Kong/static-hosting migration preparation for `hezhu.me` is documented
+in [docs/hosting-migration.md](docs/hosting-migration.md). Run
+`bash deploy/package.sh` to package only public site files, or use the Caddy
+Docker deployment in `deploy/`. Domain registration and production cutover are
+pending; the current public endpoint above is still authoritative.
+
 ## Storage
 
 At the October 2026 inventory, the original checkout occupied approximately 95 MB:

@@ -1,0 +1,7 @@
+.git
+docs
+dist
+*.tex
+*.log
+*.aux
+*.out
